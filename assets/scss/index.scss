@@ -10,6 +10,7 @@
 @mixin main-product-card {}
 
 $custom-text-color: rgb(33, 37, 41);
+$custom-text-border: 1px solid rgba(26, 72, 69, 0.2);
 
 .container {
     max-width: 1319.2px;
@@ -40,7 +41,7 @@ header {
     }
 
     .header-topbar {
-        border-bottom: 1px solid rgba(26, 72, 69, 0.2);
+        border-bottom: $custom-text-border;
 
         .header-topbar-wrapper {
             width: 1290px;
@@ -183,7 +184,7 @@ header {
     }
 
     .header-main {
-        border-bottom: 1px solid rgba(26, 72, 69, 0.2);
+        border-bottom: $custom-text-border;
 
         .header-main-wrapper {
             width: 1290px;
@@ -488,9 +489,11 @@ header {
 #featured {
     display: grid;
     place-content: center;
+    margin-bottom: 20px !important;
 
     .featured-wrapper {
         width: 1260px;
+        margin-bottom: 50px !important;
 
         .featured-header {
             padding: 15px !important;
@@ -513,9 +516,42 @@ header {
         }
 
         .featured-products {
+
+            .slick-prev,
+            .slick-next {
+                color: #000;
+                border-radius: 5px;
+                border: none;
+                top: 210px;
+            }
+
+            .slick-prev i,
+            .slick-next i {
+                font-size: 30px;
+                opacity: 0.2;
+                color: #000;
+
+                &:hover {
+                    opacity: 0.4;
+                }
+            }
+
+            .slick-dots {
+                bottom: -55px;
+        
+                button {
+                    &::before {
+                        font-size: 8px;
+                        color: #000 !important;
+                    }
+                }
+            }
+
             .product-card {
                 display: flex;
                 flex-direction: column;
+                width: 292.5px !important;
+                margin-inline: 15.25px !important;
 
                 .product-card-thumbnail {
                     position: relative;
@@ -607,4 +643,14 @@ header {
             }
         }
     }
+    .line{
+        .line-wrapper{
+            margin-top: 60px !important;
+            width: 100%;
+            height: 1px;
+            background-color: #000;
+            opacity: 0.2;
+        }
+    }
 }
+
