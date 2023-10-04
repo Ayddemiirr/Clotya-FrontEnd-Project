@@ -472,7 +472,7 @@ header .header-main .header-main-wrapper .header-main-right .header-cart .header
 }
 #featured .featured-wrapper .featured-products .product-card .product-card-thumbnail {
   position: relative;
-  width: 292.5px;
+  width: 100%;
   height: 438.75px;
   margin-bottom: 16px !important;
 }
@@ -555,6 +555,7 @@ header .header-main .header-main-wrapper .header-main-right .header-cart .header
   height: 100%;
 }
 #featured .featured-wrapper .featured-products .product-card .product-card-text {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -744,6 +745,8 @@ header .header-main .header-main-wrapper .header-main-right .header-cart .header
 #last-collection .last-collection-wrapper {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 85px !important;
+  border-bottom: 1px solid rgba(26, 72, 69, 0.2);
 }
 #last-collection .last-collection-wrapper .last-collection-left img {
   width: 615px;
@@ -787,4 +790,218 @@ header .header-main .header-main-wrapper .header-main-right .header-cart .header
   background-color: #8f8f8f;
   color: #fff;
   transition: all 0.15s ease-in-out;
+}
+#last-collection .last-collection-wrapper .last-collection-line {
+  width: 100%;
+  height: 0.5px;
+  opacity: 0.5;
+  background-color: #000;
+  margin: 75px 0 !important;
+}
+#last-collection .last-collection-wrapper .last-collection-review {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+#last-collection .last-collection-wrapper .last-collection-raiting {
+  display: flex;
+  align-items: center;
+}
+#last-collection .last-collection-wrapper .last-collection-raiting i {
+  font-size: 11px;
+}
+#last-collection .last-collection-wrapper .last-collection-raiting span {
+  margin-left: 12px !important;
+  font: normal 400 13px/19.5px "Jost", sans-serif;
+  letter-spacing: -0.03px;
+  color: rgb(117, 118, 124);
+}
+#last-collection .last-collection-wrapper .last-collection-review-description {
+  font: normal 400 16px/24px "Jost", sans-serif;
+  letter-spacing: -0.03px;
+  color: rgb(117, 118, 124);
+  margin: 8px 0 !important;
+}
+#last-collection .last-collection-wrapper .last-collection-heading {
+  font: normal 500 15px/18px "Jost", sans-serif;
+}
+
+#featured-products .featured-products-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px !important;
+}
+#featured-products .featured-products-heading h4 {
+  font: normal 500 30px/36px "Jost", sans-serif;
+}
+#featured-products .featured-products-heading p {
+  font: normal 300 17px/25.5px "Jost", sans-serif;
+  letter-spacing: -0.03px;
+  width: 756px;
+}
+#featured-products .featured-products-wrapper .slick-prev,
+#featured-products .featured-products-wrapper .slick-next {
+  color: #000;
+  border-radius: 5px;
+  border: none;
+  top: 210px;
+}
+#featured-products .featured-products-wrapper .slick-prev i,
+#featured-products .featured-products-wrapper .slick-next i {
+  font-size: 30px;
+  opacity: 0.2;
+  color: #000;
+}
+#featured-products .featured-products-wrapper .slick-prev i:hover,
+#featured-products .featured-products-wrapper .slick-next i:hover {
+  opacity: 0.4;
+}
+#featured-products .featured-products-wrapper .slick-dots {
+  bottom: -55px;
+}
+#featured-products .featured-products-wrapper .slick-dots button::before {
+  font-size: 8px;
+  color: #000 !important;
+}
+#featured-products .featured-products-wrapper .featured-product {
+  display: flex;
+  flex-direction: column;
+  width: 292.5px !important;
+  margin-inline: 15.25px !important;
+}
+#featured-products .featured-products-wrapper .featured-product:hover .product-card-thumbnail .product-link {
+  display: flex;
+}
+#featured-products .featured-products-wrapper .featured-product .product-card-thumbnail {
+  position: relative;
+  width: 292.5px;
+  height: 438.75px;
+  margin-bottom: 16px !important;
+}
+#featured-products .featured-products-wrapper .featured-product .product-card-thumbnail .product-link {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 2;
+  top: 15px;
+  right: -7px;
+  transform: translate(-50%);
+}
+#featured-products .featured-products-wrapper .featured-product .product-card-thumbnail .product-link--hover-text {
+  width: 82.25px;
+  height: 23px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  border-radius: 2px;
+  top: -32px;
+  font: normal 400 12px/23px "Jost", sans-serif;
+  display: none;
+}
+#featured-products .featured-products-wrapper .featured-product .product-card-thumbnail .product-card-page-link {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+  animation: fadeDown 0.6s forwards;
+}
+#featured-products .featured-products-wrapper .featured-product .product-card-thumbnail .product-card-page-link:hover {
+  background-color: #EE403D;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+#featured-products .featured-products-wrapper .featured-product .product-card-thumbnail .product-card-page-link:hover i {
+  animation: none;
+  color: white;
+}
+#featured-products .featured-products-wrapper .featured-product .product-card-thumbnail .product-card-page-link:hover span {
+  animation: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#featured-products .featured-products-wrapper .featured-product .product-card-thumbnail .product-card-page-link:hover span i {
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #000;
+  font-size: 14px;
+}
+#featured-products .featured-products-wrapper .featured-product .product-card-thumbnail .add-to-card i {
+  font-size: 14px;
+  color: rgb(30, 30, 30);
+}
+#featured-products .featured-products-wrapper .featured-product .product-card-thumbnail .compare i {
+  font-size: 14px;
+  color: rgb(46, 45, 45);
+}
+#featured-products .featured-products-wrapper .featured-product .product-card-thumbnail .hover-image img {
+  display: none;
+}
+#featured-products .featured-products-wrapper .featured-product .product-card-thumbnail:hover .hover-image img {
+  display: inline;
+}
+#featured-products .featured-products-wrapper .featured-product .product-card-thumbnail .product-image {
+  position: absolute;
+}
+#featured-products .featured-products-wrapper .featured-product .product-card-thumbnail .product-image img {
+  width: 100%;
+  height: 100%;
+}
+#featured-products .featured-products-wrapper .featured-product .product-card-text {
+  display: flex;
+  flex-direction: column;
+}
+#featured-products .featured-products-wrapper .featured-product .product-card-text .product-card-review {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px !important;
+}
+#featured-products .featured-products-wrapper .featured-product .product-card-text .product-card-review i {
+  font-size: 13px;
+  line-height: 19.5px;
+  color: rgb(249, 195, 0) !important;
+}
+#featured-products .featured-products-wrapper .featured-product .product-card-text .product-card-review span {
+  margin-top: 1.5px !important;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -0.03;
+  line-height: 19.5px;
+}
+#featured-products .featured-products-wrapper .featured-product .product-card-text .product-card-title {
+  margin-bottom: 8px !important;
+}
+#featured-products .featured-products-wrapper .featured-product .product-card-text .product-card-title a {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: none;
+  color: #000;
+}
+#featured-products .featured-products-wrapper .featured-product .product-card-text .product-card-price {
+  display: flex;
+  gap: 8px;
+  letter-spacing: -0.03px;
+}
+#featured-products .featured-products-wrapper .featured-product .product-card-text .product-card-price .old-price {
+  text-decoration: line-through;
+  opacity: 0.4;
+  font-size: 14.1px;
+  font-weight: 400;
+  line-height: 21.15px;
+}
+#featured-products .featured-products-wrapper .featured-product .product-card-text .product-card-price .new-price {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22.5px;
 }/*# sourceMappingURL=index.css.map */
