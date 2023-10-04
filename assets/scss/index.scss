@@ -550,6 +550,13 @@ header {
                 }
             }
 
+            .slick-next{
+                right: -32px;
+            }
+            .slick-prev{
+                left: -32px;
+            }
+
             .slick-dots {
                 bottom: -55px;
 
@@ -1032,17 +1039,28 @@ header {
 
     .featured-products-wrapper {
 
+        .slick-list{
+            height: 630px;
+        }
+
         .slick-prev,
         .slick-next {
             color: #000;
             border-radius: 5px;
             border: none;
-            top: 210px;
+            top: 275px;
+        }
+
+        .slick-next{
+            right: -32px;
+        }
+        .slick-prev{
+            left: -32px;
         }
 
         .slick-prev i,
         .slick-next i {
-            font-size: 30px;
+            font-size: 32px;
             opacity: 0.2;
             color: #000;
 
@@ -1065,8 +1083,9 @@ header {
         .featured-product {
             display: flex;
             flex-direction: column;
-            width: 292.5px !important;
+            width: 400px !important;
             margin-inline: 15.25px !important;
+            position: relative;
 
             &:hover {
                 .product-card-thumbnail {
@@ -1078,8 +1097,8 @@ header {
 
             .product-card-thumbnail {
                 position: relative;
-                width: 292.5px;
-                height: 438.75px;
+                width: 100%;
+                height: 600px;
                 margin-bottom: 16px !important;
 
                 .product-link {
@@ -1187,8 +1206,16 @@ header {
             }
 
             .product-card-text {
+                width: 352px;
+                height: 81px;
                 display: flex;
                 flex-direction: column;
+                position: absolute;
+                background-color: #fff;
+                bottom: 5px;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 16px 24px !important;
 
                 .product-card-review {
                     display: flex;
