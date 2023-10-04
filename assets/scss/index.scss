@@ -917,7 +917,7 @@ header {
 }
 
 #last-collection {
-    padding: 100px 0 !important;
+    padding: 100px 0  85px 0 !important;
 
     .last-collection-wrapper {
         display: flex;
@@ -1021,11 +1021,12 @@ header {
 }
 
 #featured-products {
+    height: 860px;
     .featured-products-heading {
         display: flex;
         justify-content: space-between;
         margin-bottom: 50px !important;
-
+        
         h4 {
             font: normal 500 30px/36px $custom-font-family;
         }
@@ -1268,6 +1269,149 @@ header {
                         font-weight: 500;
                         line-height: 22.5px;
                     }
+                }
+            }
+        }
+    }
+}
+
+#best-sweatshirts{
+    .best-sweatshirts-wrapper{
+        background-image: url("../images/banner-box2.jpg");
+        background-size: cover;
+        height: 551.25px;
+        position: relative;
+        padding: 60px 80px !important;
+        display: flex;
+        align-items: center;
+
+        .best-sweatshirts-text {
+            width: 515.5px;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+
+            .best-sweatshirts-heading {
+                font: normal 600 12px/14.4px $custom-font-family;
+                letter-spacing: 1px;
+                margin-bottom: 15px !important;
+            }
+
+            .best-sweatshirts-title {
+                font-size: 48px;
+                font-weight: 400;
+                line-height: 57.6px;
+                margin-bottom: 20px !important;
+            }
+
+            .best-sweatshirts-description {
+                color: #75767C;
+                font-size: 17px;
+                line-height: 1.5em;
+                margin-bottom: 32px !important;
+            }
+
+            .best-sweatshirts-link {
+                margin: 15px 0 0 0 !important;
+                width: 135.79px;
+                height: 42px;
+                padding: 8px 15px !important;
+                border: 0.8px solid rgba(143, 143, 143, 0.5);
+                border-radius: 4px;
+                text-decoration: none;
+                color: #000;
+                font: normal 500 15px $custom-font-family;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                &:hover {
+                    background-color: #8f8f8f;
+                    color: #fff;
+                    transition: all 0.15s ease-in-out;
+                }
+            }
+        }
+
+        .best-sweatshirts-links{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+#our-latest{
+    .our-latest-wrapper{
+        padding: 55px 0 !important;
+
+        .our-latest-heading{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 50px !important;
+
+            h4{
+                font: normal 500 30px/36px $custom-font-family;
+                color: #000;
+                margin-bottom: 8px !important;
+            }
+
+            p{
+                font: normal 300 17px/25.5px $custom-font-family;
+                width: 840px;
+                color: rgb(117, 118, 124);
+                text-align: center;
+            }
+        }
+
+        .blog-content{
+            display: flex;
+            justify-content: space-between;
+            
+            .blog-item{
+                width: 404px;
+                height: 435px;
+
+                .blog-image{
+                    height: 298.6px;
+                }
+
+                .blog-category{
+                    text-decoration: none;
+                    font: normal 400 12px/18px $custom-font-family;
+                    letter-spacing: -0.03px;
+                    color: #000;
+                    opacity: 0.7;
+                    margin-bottom: 10px !important;
+
+
+                    .category-line{
+                        margin: 0 6px !important;
+                        width: 12px;
+                        height: 0.4px;
+                        background-color: #000;
+                    }
+
+                    span{
+                        font: normal 600 12px/18px $custom-font-family;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                    }
+                }
+
+                .blog-title{
+                    text-decoration: none;
+                    color: #000;
+                    font: normal 500 22px/26.4px $custom-font-family;
+                }
+
+                .blog-description{
+                    font: normal 400 16px/24px $custom-font-family;
+                    margin-top: 10px !important;
+                    opacity: 0.7;
                 }
             }
         }
