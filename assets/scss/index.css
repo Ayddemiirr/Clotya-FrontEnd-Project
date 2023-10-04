@@ -1151,4 +1151,113 @@ header .header-main .header-main-wrapper .header-main-right .header-cart .header
   font: normal 400 16px/24px "Jost", sans-serif;
   margin-top: 10px !important;
   opacity: 0.7;
+}
+
+#subscribe {
+  margin-top: 25px !important;
+  background-color: #000;
+  color: #fff;
+}
+#subscribe .subscribe-wrapper {
+  height: 390px;
+  padding: 80px 0px !important;
+}
+#subscribe .subscribe-wrapper .subscribe-left {
+  display: flex;
+  flex-direction: column;
+}
+#subscribe .subscribe-wrapper .subscribe-left .subscribe-privacy {
+  font: normal 400 12px/18px "Jost", sans-serif;
+  color: rgb(117, 118, 124);
+}
+#subscribe .subscribe-wrapper .subscribe-title {
+  font: normal 500 30px/36px "Jost", sans-serif;
+  width: 400px;
+  margin-bottom: 8px !important;
+}
+#subscribe .subscribe-wrapper .subscribe-description {
+  font: normal 400 16px/24px "Jost", sans-serif;
+  letter-spacing: -0.03px;
+  opacity: 0.6;
+  margin-bottom: 30px !important;
+}
+#subscribe .subscribe-wrapper .subscribe-form {
+  display: flex;
+  margin-bottom: 10px !important;
+}
+#subscribe .subscribe-wrapper .subscribe-form input {
+  padding: 8px 15px !important;
+  font-size: 15px;
+  font-weight: 400;
+  width: 377.64px;
+  height: 48px;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+}
+#subscribe .subscribe-wrapper .subscribe-form button {
+  background-color: #000;
+  color: #fff;
+  width: 127.36px;
+  height: 48px;
+  padding: 8px 30px !important;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+#subscribe .subscribe-wrapper .subscribe-form button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+#subscribe .subscribe-wrapper .subscribe-right {
+  display: flex;
+  flex-direction: column;
+}
+#subscribe .subscribe-wrapper .subscribe-right span {
+  margin-top: 10px !important;
+  color: rgb(117, 118, 124);
+  font: normal 400 12px/18px "Jost", sans-serif;
+  letter-spacing: -0.03px;
+}
+
+footer .footer-wrapper .footer-top {
+  padding: 60px 0 !important;
+}
+footer .footer-wrapper .footer-top .li-head {
+  font: normal 600 16px/19.2px "Jost", sans-serif;
+  margin-bottom: 15px !important;
+}
+footer .footer-wrapper .footer-top .ul-logo li {
+  margin-bottom: 16px !important;
+}
+footer .footer-wrapper .footer-top .ul-logo img {
+  width: 148px;
+  height: 33px;
+}
+footer .footer-wrapper .footer-top .ul-logo p {
+  font: normal 400 14px/21px "Jost", sans-serif;
+  width: 310px;
+}
+footer .footer-wrapper .footer-top ul li a {
+  text-decoration: none;
+  color: #000;
+  font: normal 400 15px/22.5px "Jost", sans-serif;
+}
+footer .footer-wrapper .footer-line {
+  width: 100%;
+  height: 0.5px;
+  background-color: #000;
+  opacity: 0.4;
+}
+footer .footer-wrapper .footer-bottom {
+  padding: 40px 0 50px 0 !important;
+}
+footer .footer-wrapper .footer-bottom p {
+  font: normal 400 13px/19.5px "Jost", sans-serif;
+}
+footer .footer-wrapper .footer-bottom ul {
+  gap: 18px;
+}
+footer .footer-wrapper .footer-bottom ul li a {
+  text-decoration: none;
+  color: #000;
+  font: normal 400 13px/19.5px "Jost", sans-serif;
+  letter-spacing: -0.03px;
 }/*# sourceMappingURL=index.css.map */
