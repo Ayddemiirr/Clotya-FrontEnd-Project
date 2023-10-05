@@ -1287,12 +1287,13 @@ footer .footer-wrapper .footer-bottom ul li a {
 
 #blog {
   margin-top: 90px !important;
+  margin-bottom: 45px !important;
 }
 #blog .blog-wrapper .blog-posts {
   width: 920px;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 950px;
   overflow-y: auto;
 }
 #blog .blog-wrapper .blog-posts .center {
@@ -1377,6 +1378,87 @@ footer .footer-wrapper .footer-bottom ul li a {
   margin-top: 16px !important;
 }
 #blog .blog-wrapper #sidebar {
-  width: 321px;
-  padding: 0px 12px !important;
+  width: 297px;
+}
+#blog .blog-wrapper #sidebar .blogs-search {
+  position: relative;
+  margin-bottom: 40px !important;
+}
+#blog .blog-wrapper #sidebar .blogs-search input {
+  width: 100%;
+  height: 42px;
+  padding: 8px 15px !important;
+  border: 0.8px solid rgba(143, 143, 143, 0.5);
+  outline-width: 0.2px;
+  outline-color: rgba(26, 72, 69, 0.9);
+}
+#blog .blog-wrapper #sidebar .blogs-search i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 16px;
+  opacity: 0.8;
+}
+#blog .blog-wrapper #sidebar .popular-posts h3 {
+  font: normal 500 16px/19.2px "Jost", sans-serif;
+  padding-bottom: 15px !important;
+  margin-bottom: 30px !important;
+  border-bottom: 1px solid rgba(26, 72, 69, 0.2);
+}
+#blog .blog-wrapper #sidebar .popular-posts .popular-item {
+  margin-bottom: 40px !important;
+}
+#blog .blog-wrapper #sidebar .popular-posts .popular-item a {
+  text-decoration: none;
+}
+#blog .blog-wrapper #sidebar .popular-posts .popular-item figure img {
+  width: 80px;
+  height: 80px;
+}
+#blog .blog-wrapper #sidebar .popular-posts .popular-item .popular-item-text {
+  color: #000;
+  padding-left: 8px !important;
+}
+#blog .blog-wrapper #sidebar .popular-posts .popular-item .popular-item-text .popular-item-date {
+  font: normal 400 12px/18px "Jost", sans-serif;
+  letter-spacing: -0.03px;
+  margin-bottom: 8px !important;
+}
+#blog .blog-wrapper #sidebar .popular-posts .popular-item .popular-item-text .popular-item-title {
+  font: normal 500 16px/20px "Jost", sans-serif;
+}
+#blog .blog-wrapper #sidebar .blog-categories {
+  margin-bottom: 40px !important;
+}
+#blog .blog-wrapper #sidebar .blog-categories h3 {
+  font: normal 500 16px/19.2px "Jost", sans-serif;
+  padding-bottom: 15px !important;
+  margin-bottom: 30px !important;
+  border-bottom: 1px solid rgba(26, 72, 69, 0.2);
+}
+#blog .blog-wrapper #sidebar .blog-categories ul li a {
+  text-decoration: none;
+  color: #000;
+  font: normal 400 14px/21px "Jost", sans-serif;
+}
+#blog .blog-wrapper #sidebar .blog-categories ul li a i {
+  opacity: 0.65;
+}
+#blog .blog-wrapper #sidebar .blog-tags h3 {
+  font: normal 500 16px/19.2px "Jost", sans-serif;
+  padding-bottom: 15px !important;
+  margin-bottom: 30px !important;
+  border-bottom: 1px solid rgba(26, 72, 69, 0.2);
+}
+#blog .blog-wrapper #sidebar .blog-tags .tag-item {
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  padding-inline: 16px !important;
+  border: 1px solid rgba(26, 72, 69, 0.2);
+  font: normal 400 14px/21px "Jost", sans-serif;
+  letter-spacing: -0.03px;
+  margin-bottom: 5px !important;
+  color: #000;
 }/*# sourceMappingURL=index.css.map */
