@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+$custom-text-color: rgb(33, 37, 41);
+$custom-text-border: 1px solid rgba(26, 72, 69, 0.2);
+$custom-font-family: 'Jost',sans-serif;
+$custom-red-color: #EE403D;
+
+.container {
+    max-width: 1260.2px;
+    margin: 0 auto !important;
+}
+
+#blog{
+    margin-top: 90px !important;
+
+    .blog-wrapper{
+        .blog-posts{
+            width: 920px;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow-y: auto;
+
+            @import './pagination';
+
+            &::-webkit-scrollbar {
+                width: 0px;
+            }
+    
+            &::-webkit-scrollbar-thumb {
+                background-color: #000;
+            }
+    
+            &::-webkit-scrollbar-track {
+                background-color: #e3dcdc;
+            }
+
+            .blog-item{
+                width: 100%;
+                margin-bottom: 90px !important;
+
+                .blog-image{
+                    height: 680px;
+                    margin-bottom: 30px !important;
+                }
+
+                .blog-category{
+                    text-decoration: none;
+                    font: normal 400 12px/18px $custom-font-family;
+                    letter-spacing: -0.03px;
+                    color: #000;
+                    opacity: 0.7;
+                    margin-bottom: 10px !important;
+
+
+                    .category-line{
+                        margin: 0 6px !important;
+                        width: 12px;
+                        height: 0.4px;
+                        background-color: #000;
+                    }
+
+                    span{
+                        font: normal 600 12px/18px $custom-font-family;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                    }
+                }
+
+                .blog-title{
+                    text-decoration: none;
+                    color: #000;
+                    font: normal 500 38px/45.6px $custom-font-family;
+                }
+
+                .blog-description{
+                    font: normal 400 16px/24px $custom-font-family;
+                    margin-top: 10px !important;
+                    opacity: 0.7;
+                }
+                .blog-link{
+                    text-decoration: none;
+                    color: #000;
+                    gap: 10px;
+                    font: normal 500 16px/25.6px $custom-font-family;
+                    opacity: 0.5;
+                    margin-top: 16px !important;
+                }
+
+
+            }
+        }
+        #sidebar{
+            width: 321px;
+            padding: 0px 12px !important;
+        }
+    }
+}

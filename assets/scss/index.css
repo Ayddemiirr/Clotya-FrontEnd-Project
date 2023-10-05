@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0 !important;
   padding: 0 !important;
@@ -1260,4 +1261,122 @@ footer .footer-wrapper .footer-bottom ul li a {
   color: #000;
   font: normal 400 13px/19.5px "Jost", sans-serif;
   letter-spacing: -0.03px;
+}
+
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.container {
+  max-width: 1260.2px;
+  margin: 0 auto !important;
+}
+
+#blog {
+  margin-top: 90px !important;
+}
+#blog .blog-wrapper .blog-posts {
+  width: 920px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+}
+#blog .blog-wrapper .blog-posts .center {
+  margin-top: 60px;
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+}
+#blog .blog-wrapper .blog-posts .pagination {
+  display: inline-block;
+}
+#blog .blog-wrapper .blog-posts .pagination a {
+  color: #000000;
+  float: left;
+  padding: 8px 16px !important;
+  text-decoration: none;
+  transition: background-color 0.5s;
+  border: 1px solid #DDD;
+  margin: 0 4px !important;
+  font-size: 16px;
+}
+#blog .blog-wrapper .blog-posts .pagination a.pagination-active {
+  background-color: #000;
+  color: #FFFFFF;
+  border: 1px solid #000;
+}
+#blog .blog-wrapper .blog-posts .pagination a:hover:not(.pagination-active) {
+  background-color: #000;
+  color: #fff;
+}
+#blog .blog-wrapper .blog-posts::-webkit-scrollbar {
+  width: 0px;
+}
+#blog .blog-wrapper .blog-posts::-webkit-scrollbar-thumb {
+  background-color: #000;
+}
+#blog .blog-wrapper .blog-posts::-webkit-scrollbar-track {
+  background-color: #e3dcdc;
+}
+#blog .blog-wrapper .blog-posts .blog-item {
+  width: 100%;
+  margin-bottom: 90px !important;
+}
+#blog .blog-wrapper .blog-posts .blog-item .blog-image {
+  height: 680px;
+  margin-bottom: 30px !important;
+}
+#blog .blog-wrapper .blog-posts .blog-item .blog-category {
+  text-decoration: none;
+  font: normal 400 12px/18px "Jost", sans-serif;
+  letter-spacing: -0.03px;
+  color: #000;
+  opacity: 0.7;
+  margin-bottom: 10px !important;
+}
+#blog .blog-wrapper .blog-posts .blog-item .blog-category .category-line {
+  margin: 0 6px !important;
+  width: 12px;
+  height: 0.4px;
+  background-color: #000;
+}
+#blog .blog-wrapper .blog-posts .blog-item .blog-category span {
+  font: normal 600 12px/18px "Jost", sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+#blog .blog-wrapper .blog-posts .blog-item .blog-title {
+  text-decoration: none;
+  color: #000;
+  font: normal 500 38px/45.6px "Jost", sans-serif;
+}
+#blog .blog-wrapper .blog-posts .blog-item .blog-description {
+  font: normal 400 16px/24px "Jost", sans-serif;
+  margin-top: 10px !important;
+  opacity: 0.7;
+}
+#blog .blog-wrapper .blog-posts .blog-item .blog-link {
+  text-decoration: none;
+  color: #000;
+  gap: 10px;
+  font: normal 500 16px/25.6px "Jost", sans-serif;
+  opacity: 0.5;
+  margin-top: 16px !important;
+}
+#blog .blog-wrapper #sidebar {
+  width: 321px;
+  padding: 0px 12px !important;
 }/*# sourceMappingURL=index.css.map */
