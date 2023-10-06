@@ -1495,7 +1495,7 @@ footer .footer-wrapper .footer-bottom ul li a {
 }
 #shop .container .shop__filter {
   width: 280px;
-  margin-right: 40px !important;
+  margin-right: 132px !important;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -1594,9 +1594,6 @@ footer .footer-wrapper .footer-bottom ul li a {
   flex-direction: column;
   gap: 8px;
 }
-#shop .container .shop__filter__availability {
-  border-bottom: 1px solid rgba(163, 156, 156, 0.5);
-}
 #shop .container .shop__filter__availability__title {
   font: normal 400 18px/21.6px "Jost", sans-serif;
   margin-bottom: 25px !important;
@@ -1604,70 +1601,87 @@ footer .footer-wrapper .footer-bottom ul li a {
   align-items: center;
   position: relative;
 }
-#shop .container .shop__filter__availability__title--close img {
-  position: absolute;
-  top: 5px;
-  right: 0;
-  width: 15px;
-  height: 15px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  cursor: pointer;
-  transition: all 0.6s;
-}
 #shop .container .shop__filter__availability__display {
   padding-bottom: 30px !important;
-  transition: all 0.6s;
-}
-#shop .container .shop__filter__availability__display.display-a-active {
-  display: none;
   transition: all 0.6s;
 }
 #shop .container .shop__filter__availability__item {
   animation: fadeDown 0.4s forwards;
 }
-#shop .container .shop__filter__availability__item.deactivate {
-  display: none;
-}
 #shop .container .shop__filter__availability__link {
   text-decoration: none;
   display: flex;
   align-items: center;
+  color: #000;
 }
 #shop .container .shop__filter__availability__link:hover label {
   color: #000;
 }
-#shop .container .shop__filter__availability__link:hover span {
-  color: #000;
-}
-#shop .container .shop__filter__availability__link input[type=checkbox] {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width: 16px;
-  height: 16px;
-  border: 1px solid rgb(188, 182, 182);
-  border-radius: 50%;
-  outline: none;
-  cursor: pointer;
+#shop .container .shop__filter__availability__link .checkbox-container {
+  width: 100%;
+  display: inline-block;
   position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
-#shop .container .shop__filter__availability__link input[type=checkbox]:checked:after {
+#shop .container .shop__filter__availability__link .custom-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+#shop .container .shop__filter__availability__link .checkbox-name {
+  margin-left: 15px !important;
+  font: normal 400 14px/21px "Jost", sans-serif;
+}
+#shop .container .shop__filter__availability__link .checkbox-count {
+  cursor: text;
+  font: normal 400 13px/25px "Jost", sans-serif;
+  letter-spacing: -0.03px;
+  color: #9aa5b3;
+}
+#shop .container .shop__filter__availability__link .checkmark {
+  height: 16px;
+  width: 16px;
+  background-color: #fff;
+  transition: background-color 0.3s;
+  border: 1px solid rgba(26, 72, 69, 0.15);
+  border-radius: 2px;
+}
+#shop .container .shop__filter__availability__link .checkmark:after {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 6.5px;
-  height: 6.5px;
-  background-color: #41cde2;
-  border-radius: 50%;
+  display: none;
+  left: 6.5px;
+  top: 5px;
+  width: 4px;
+  height: 4px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
 }
-#shop .container .shop__filter__availability__link label {
-  font: normal 400 14px/23.8px "Jost", sans-serif;
-  color: rgb(134, 134, 134);
-  margin-left: 9px !important;
-  cursor: pointer;
+#shop .container .shop__filter__availability__link .custom-checkbox:checked ~ .checkmark {
+  background-color: #EE403D;
+}
+#shop .container .shop__filter__availability__link .custom-checkbox:checked ~ .checkmark:after {
+  display: block;
+}
+@keyframes checkAnim {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 10px;
+  }
+}
+#shop .container .shop__filter__availability__link .custom-checkbox:checked ~ .checkmark:after {
+  animation: checkAnim 0.2s forwards;
 }
 #shop .container .shop__filter__availability__ul {
   display: flex;
@@ -1777,22 +1791,11 @@ footer .footer-wrapper .footer-bottom ul li a {
   box-shadow: 0 0 6px rgba(164, 161, 161, 0.05);
 }
 #shop .container .shop__filter__color__title {
-  font: normal 400 18px/21.6px "Jost", sans-serif;
+  font: normal 500 16px/19.2px "Jost", sans-serif;
   margin-bottom: 20px !important;
   display: flex;
   align-items: center;
   position: relative;
-}
-#shop .container .shop__filter__color__title--close img {
-  position: absolute;
-  top: 5px;
-  right: 0;
-  width: 15px;
-  height: 15px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  cursor: pointer;
-  transition: all 0.6s;
 }
 #shop .container .shop__filter__color__display {
   display: flex;
@@ -1865,94 +1868,146 @@ footer .footer-wrapper .footer-bottom ul li a {
   letter-spacing: -0.03px;
   color: #9aa5b3;
 }
-#shop .container .shop__filter__size {
-  border-bottom: 1px solid rgba(163, 156, 156, 0.5);
-}
 #shop .container .shop__filter__size__title {
-  font: normal 400 18px/21.6px "Jost", sans-serif;
-  margin-bottom: 25px !important;
+  font: normal 500 16px/19.2px "Jost", sans-serif;
+  margin-bottom: 12px !important;
   display: flex;
   align-items: center;
   position: relative;
 }
-#shop .container .shop__filter__size__title--close img {
-  position: absolute;
-  top: 5px;
-  right: 0;
-  width: 15px;
-  height: 15px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  cursor: pointer;
-  transition: all 0.6s;
-}
 #shop .container .shop__filter__size__display {
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1px;
-  grid-row-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
   padding-bottom: 30px !important;
   transition: all 0.6s;
 }
-#shop .container .shop__filter__size__display.display-s-active {
-  display: none;
-  transition: all 0.6s;
+#shop .container .shop__filter__size__item {
+  animation: fadeDown 0.4s forwards;
 }
-#shop .container .shop__filter__size__item button {
-  width: 54.28px;
-  height: 41.6px;
-  background-color: white;
-  outline: none;
-  border: 1px solid rgba(163, 156, 156, 0.5);
-  font: normal 400 15px/20px "Jost", sans-serif;
+#shop .container .shop__filter__size__link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #000;
 }
-#shop .container .shop__filter__size__item button:hover {
-  cursor: pointer;
-  background-color: #41cde2;
-  color: #fff;
+#shop .container .shop__filter__size__link:hover label {
+  color: #000;
 }
-#shop .container .shop__filter__size__item button.active-filter-size {
-  background-color: #41cde2;
-  color: #fff;
-}
-#shop .container .shop__content--select {
-  width: 188.8px;
-  position: relative;
-}
-#shop .container .shop__content--select .shopify-select, #shop .container .shop__content--select #productFilter {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-color: transparent;
-  border: none;
-  border: 1px solid rgba(163, 156, 156, 0.5);
-  padding-inline: 15px 45px !important;
-  font: normal 400 15.3px "Jost", sans-serif;
-  color: rgb(134, 134, 134);
-  border-radius: 2px;
-  cursor: pointer;
-}
-#shop .container .shop__content--select .shopify-select:focus, #shop .container .shop__content--select #productFilter:focus {
-  outline: none;
-}
-#shop .container .shop__content--select #productFilter {
+#shop .container .shop__filter__size__link .checkbox-container {
   width: 100%;
-  height: 37px;
-  margin-bottom: 20px !important;
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
-#shop .container .shop__content--select--icon {
+#shop .container .shop__filter__size__link .custom-checkbox {
   position: absolute;
-  right: 15px;
-  top: 10px;
-  font: normal 300 12.7px "Jost", sans-serif;
-  color: rgb(134, 134, 134);
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+#shop .container .shop__filter__size__link .checkbox-name {
+  margin-left: 15px !important;
+  font: normal 400 14px/21px "Jost", sans-serif;
+}
+#shop .container .shop__filter__size__link .checkbox-count {
+  cursor: text;
+  font: normal 400 13px/25px "Jost", sans-serif;
+  letter-spacing: -0.03px;
+  color: #9aa5b3;
+}
+#shop .container .shop__filter__size__link .checkmark {
+  height: 16px;
+  width: 16px;
+  background-color: #fff;
+  transition: background-color 0.3s;
+  border: 1px solid rgba(26, 72, 69, 0.15);
+  border-radius: 2px;
+}
+#shop .container .shop__filter__size__link .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 6.5px;
+  top: 4.5px;
+  width: 4px;
+  height: 4px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+#shop .container .shop__filter__size__link .custom-checkbox:checked ~ .checkmark {
+  background-color: #EE403D;
+}
+#shop .container .shop__filter__size__link .custom-checkbox:checked ~ .checkmark:after {
+  display: block;
+}
+@keyframes checkAnim {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 10px;
+  }
+}
+#shop .container .shop__filter__size__link .custom-checkbox:checked ~ .checkmark:after {
+  animation: checkAnim 0.2s forwards;
+}
+#shop .container .shop__filter__size__ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#shop .container .shop__content {
+  width: 100%;
+}
+#shop .container .shop__content select {
+  outline: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font: normal 400 14px/21px "Jost", sans-serif;
+}
+#shop .container .shop__content .show-select span {
+  font: normal 400 13px/19.5px "Jost", sans-serif;
+  letter-spacing: -0.03px;
+  opacity: 0.5;
+}
+#shop .container .shop__content #sort {
+  width: 110px;
+}
+#shop .container .shop__content .select-wrap {
+  width: 0.5px;
+  height: 26.6px;
+  background-color: #000;
+  opacity: 0.2;
+  margin-inline: 8px !important;
 }
 #shop .container .shop__content__filter-products {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 30px;
   grid-row-gap: 30px;
+  margin-top: 30px !important;
+  height: 900px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#shop .container .shop__content__filter-products::-webkit-scrollbar {
+  width: 0px;
+}
+#shop .container .shop__content__filter-products::-webkit-scrollbar-thumb {
+  background-color: #000;
+}
+#shop .container .shop__content__filter-products::-webkit-scrollbar-track {
+  background-color: #e3dcdc;
 }
 #shop .container .shop__content__filter-products > * {
   animation: fadeDown 0.8s ease-in-out;
@@ -1960,72 +2015,29 @@ footer .footer-wrapper .footer-bottom ul li a {
 #shop .container .shop__content__filter-products .product-card {
   display: flex;
   flex-direction: column;
+  width: 207.75px !important;
 }
-#shop .container .shop__content__filter-products .product-card:hover .product-card__hover-image {
-  display: inline;
-}
-#shop .container .shop__content__filter-products .product-card:hover .product-link {
+#shop .container .shop__content__filter-products .product-card:hover .product-card-thumbnail .product-link {
   display: flex;
 }
-#shop .container .shop__content__filter-products .product-card__image {
-  width: 330px;
-  height: 422.49px;
+#shop .container .shop__content__filter-products .product-card .product-card-thumbnail {
   position: relative;
-}
-#shop .container .shop__content__filter-products .product-card__image .product-image {
   width: 100%;
-  height: 100%;
-  position: absolute;
+  height: 311.63px;
+  margin-bottom: 16px !important;
 }
-#shop .container .shop__content__filter-products .product-card__hover-image {
+#shop .container .shop__content__filter-products .product-card .product-card-thumbnail .product-link {
   display: none;
-}
-#shop .container .shop__content__filter-products .product-card--page-link {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: white;
-  font-size: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.4s;
-  animation: fadeDown 0.6s forwards;
-}
-#shop .container .shop__content__filter-products .product-card--page-link:hover {
-  background-color: #41cde2;
-  cursor: pointer;
-  transition: all 0.4s;
-}
-#shop .container .shop__content__filter-products .product-card--page-link:hover i {
-  animation: none;
-  color: white;
-}
-#shop .container .shop__content__filter-products .product-card--page-link:hover span {
-  animation: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#shop .container .shop__content__filter-products .product-card--page-link:hover span i {
-  position: absolute;
-  bottom: -9px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #000;
-  font-size: 16px;
-}
-#shop .container .shop__content__filter-products .product-card .product-link {
-  display: flex;
+  flex-direction: column;
   gap: 10px;
   justify-content: space-between;
   position: absolute;
-  bottom: 20px;
-  left: 50%;
+  z-index: 2;
+  top: 15px;
+  right: -7px;
   transform: translate(-50%);
-  display: none;
 }
-#shop .container .shop__content__filter-products .product-card .product-link--hover-text {
+#shop .container .shop__content__filter-products .product-card .product-card-thumbnail .product-link--hover-text {
   width: 82.25px;
   height: 23px;
   background-color: black;
@@ -2036,177 +2048,170 @@ footer .footer-wrapper .footer-bottom ul li a {
   font: normal 400 12px/23px "Jost", sans-serif;
   display: none;
 }
-#shop .container .shop__content__filter-products .product-card--addition {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  gap: 10px;
-  top: 10px;
-  left: 10px;
-}
-#shop .container .shop__content__filter-products .product-card--new-in {
-  font: normal 400 14px/25px "Jost", sans-serif;
-  padding: 0 10px !important;
-  color: white;
-  background-color: #41CDE2;
-}
-#shop .container .shop__content__filter-products .product-card--hot {
-  font: normal 400 14px/25px "Jost", sans-serif;
-  padding: 0 20px !important;
-  color: white;
-  background-color: #ec1515;
-}
-#shop .container .shop__content__filter-products .product-card--add-to-card {
-  animation-delay: 0, 1s;
-}
-#shop .container .shop__content__filter-products .product-card--add-to-card i {
-  font-size: 14px;
-  color: rgb(30, 30, 30);
-}
-#shop .container .shop__content__filter-products .product-card--wishlist {
-  animation-delay: 0, 3s;
-}
-#shop .container .shop__content__filter-products .product-card--compare {
-  animation-delay: 0, 5s;
-}
-#shop .container .shop__content__filter-products .product-card--compare i {
-  font-size: 14px;
-  color: rgb(46, 45, 45);
-}
-#shop .container .shop__content__filter-products .product-card--quickview {
-  animation-delay: 1, 7s;
-}
-#shop .container .shop__content__filter-products .product-card__text {
-  margin-top: 20px !important;
-  display: flex;
-  flex-direction: column;
-}
-#shop .container .shop__content__filter-products .product-card--review {
-  margin-bottom: 10px !important;
-  display: flex;
-  align-items: center;
-  gap: 3px;
-}
-#shop .container .shop__content__filter-products .product-card--review-star {
-  color: rgb(182, 173, 173);
-  font: normal 200 11px/16px "Jost", sans-serif;
-}
-#shop .container .shop__content__filter-products .product-card--review-count {
-  margin-left: 3px !important;
-  color: #868686;
-  font-size: 13px;
-}
-#shop .container .shop__content__filter-products .product-card__title {
-  margin-bottom: 5px !important;
-  width: -moz-max-content;
-  width: max-content;
-}
-#shop .container .shop__content__filter-products .product-card__title a {
-  text-decoration: none;
-  font: normal 400 15px/25.5px "Jost", sans-serif;
-  color: #000;
-}
-#shop .container .shop__content__filter-products .product-card__title:hover a {
-  color: #41cde2;
-  transition: all 0.3s;
-}
-#shop .container .shop__content__filter-products .product-card__price {
-  margin-bottom: 14px !important;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-#shop .container .shop__content__filter-products .product-card--old-price {
-  font: normal 400 15px/14.85px "Jost", sans-serif;
-  -webkit-text-decoration: line-through rgba(0, 0, 0, 0.6);
-          text-decoration: line-through rgba(0, 0, 0, 0.6);
-  opacity: 0.5;
-}
-#shop .container .shop__content__filter-products .product-card--new-price {
-  font: normal 400 16.5px/16px "Jost", sans-serif;
-  color: red;
-}
-#shop .container .shop__content__filter-products .product-card__size {
-  margin-bottom: 12px !important;
-  display: flex;
-  align-items: center;
-}
-#shop .container .shop__content__filter-products .product-card__size__title {
-  margin-right: 6px !important;
-  font: normal 500 13px/22.1px "Jost", sans-serif;
-}
-#shop .container .shop__content__filter-products .product-card__size__item {
-  margin-right: 9px !important;
-  font: normal 500 13px/18px "Jost", sans-serif;
-  position: relative;
-}
-#shop .container .shop__content__filter-products .product-card__size__item::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  bottom: -2px;
-  background-color: #000;
-  display: none;
-  transition: all 0.6s;
-}
-#shop .container .shop__content__filter-products .product-card__size__item:hover {
-  cursor: pointer;
-}
-#shop .container .shop__content__filter-products .product-card__size__item:hover::before {
-  display: block;
-}
-#shop .container .shop__content__filter-products .product-card__size__item.size-active::before {
-  display: block;
-}
-#shop .container .shop__content__filter-products .product-card__color {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-#shop .container .shop__content__filter-products .product-card__color__content {
-  width: 28px;
-  height: 28px;
+#shop .container .shop__content__filter-products .product-card .product-card-thumbnail .product-card-page-link {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  transition: all 0.4s;
+  animation: fadeDown 0.6s forwards;
+}
+#shop .container .shop__content__filter-products .product-card .product-card-thumbnail .product-card-page-link:hover {
+  background-color: #EE403D;
   cursor: pointer;
+  transition: all 0.4s;
 }
-#shop .container .shop__content__filter-products .product-card__color__content:hover {
-  border: 1px solid rgba(0, 0, 0, 0.5);
+#shop .container .shop__content__filter-products .product-card .product-card-thumbnail .product-card-page-link:hover i {
+  animation: none;
+  color: white;
 }
-#shop .container .shop__content__filter-products .product-card__color__content.active-color {
-  border: 1px solid rgba(0, 0, 0, 0.5);
-}
-#shop .container .shop__content__filter-products .product-card__color--box {
-  width: 20px;
-  height: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
-}
-#shop .container .shop__content__filter-products .product-card__color--box span {
+#shop .container .shop__content__filter-products .product-card .product-card-thumbnail .product-card-page-link:hover span {
+  animation: none;
+  display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000;
-  display: none;
-  position: relative;
 }
-#shop .container .shop__content__filter-products .product-card__color--box span span {
-  text-align: center;
-  display: inline;
-  width: 60px;
-  padding: 5px 5px !important;
-  font: normal 400 13px/13px "Jost", sans-serif;
-  color: white;
-  top: -35px;
-  text-transform: capitalize;
-}
-#shop .container .shop__content__filter-products .product-card__color--box span i {
+#shop .container .shop__content__filter-products .product-card .product-card-thumbnail .product-card-page-link:hover span i {
   position: absolute;
-  top: -19px;
+  bottom: -9px;
   left: 50%;
   transform: translateX(-50%);
   color: #000;
+  font-size: 14px;
+}
+#shop .container .shop__content__filter-products .product-card .product-card-thumbnail .add-to-card i {
+  font-size: 14px;
+  color: rgb(30, 30, 30);
+}
+#shop .container .shop__content__filter-products .product-card .product-card-thumbnail .compare i {
+  font-size: 14px;
+  color: rgb(46, 45, 45);
+}
+#shop .container .shop__content__filter-products .product-card .product-card-thumbnail .hover-image img {
+  display: none;
+}
+#shop .container .shop__content__filter-products .product-card .product-card-thumbnail:hover .hover-image img {
+  display: inline;
+}
+#shop .container .shop__content__filter-products .product-card .product-card-thumbnail .product-image {
+  position: absolute;
+}
+#shop .container .shop__content__filter-products .product-card .product-card-thumbnail .product-image img {
+  width: 100%;
+  height: 100%;
+}
+#shop .container .shop__content__filter-products .product-card .product-card-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#shop .container .shop__content__filter-products .product-card .product-card-text .product-card-review {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px !important;
+}
+#shop .container .shop__content__filter-products .product-card .product-card-text .product-card-review i {
+  font-size: 13px;
+  line-height: 19.5px;
+  color: rgb(249, 195, 0) !important;
+}
+#shop .container .shop__content__filter-products .product-card .product-card-text .product-card-review span {
+  margin-top: 1.5px !important;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -0.03;
+  line-height: 19.5px;
+}
+#shop .container .shop__content__filter-products .product-card .product-card-text .product-card-title {
+  margin-bottom: 8px !important;
+}
+#shop .container .shop__content__filter-products .product-card .product-card-text .product-card-title a {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: none;
+  color: #000;
+}
+#shop .container .shop__content__filter-products .product-card .product-card-text .product-card-price {
+  display: flex;
+  gap: 8px;
+  letter-spacing: -0.03px;
+}
+#shop .container .shop__content__filter-products .product-card .product-card-text .product-card-price .old-price {
+  text-decoration: line-through;
+  opacity: 0.4;
+  font-size: 14.1px;
+  font-weight: 400;
+  line-height: 21.15px;
+}
+#shop .container .shop__content__filter-products .product-card .product-card-text .product-card-price .new-price {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22.5px;
+}
+#shop .container .shop__content .center {
+  margin-top: 80px !important;
+}
+#shop .container .shop__banner {
+  display: inline-block;
+  height: 328.65px !important;
+  width: 100%;
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 30px !important;
+}
+#shop .container .shop__banner img {
+  height: 100%;
+}
+#shop .container .shop__banner--text {
+  width: 330px;
+  position: absolute;
+  top: 70px;
+  left: 60px;
+}
+#shop .container .shop__banner_title {
+  font: normal 400 38px/45px "Jost", sans-serif;
+  margin-bottom: 14px !important;
+}
+#shop .container .shop__banner_description {
+  color: rgb(104, 104, 104);
+}
+
+.center {
+  margin-top: 60px;
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: #000000;
+  float: left;
+  padding: 8px 16px !important;
+  text-decoration: none;
+  transition: background-color 0.5s;
+  border: 1px solid #DDD;
+  margin: 0 4px !important;
   font-size: 16px;
+}
+
+.pagination a.pagination-active {
+  background-color: #000;
+  color: #FFFFFF;
+  border: 1px solid #000;
+}
+
+.pagination a:hover:not(.pagination-active) {
+  background-color: #000;
+  color: #fff;
 }/*# sourceMappingURL=index.css.map */

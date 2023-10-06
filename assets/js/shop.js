@@ -43,3 +43,14 @@ function filterPriceRangeSlider() {
     });
 }
 filterPriceRangeSlider();
+
+function toggleActiveColor(clickedElement) {
+    const colorContents = document.querySelectorAll('.shop__filter__color__content');
+    colorContents.forEach((element) => {
+        if (element === clickedElement) {
+            element.classList.add('active-color');
+        } else {
+            element.classList.remove('active-color');
+        }
+    });
+}

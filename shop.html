@@ -253,7 +253,7 @@
                                     <li class="shop__filter__categories__item">
                                         <a class="shop__filter__categories__link" href="#">
                                             <label for="trousers" class="checkbox-container d-flex align-items-center justify-content-around">
-                                                <input id="trousers" class="custom-checkbox" checked="" type="checkbox">
+                                                <input id="trousers" class="custom-checkbox" type="checkbox">
                                                 <span class="checkmark"></span>
                                                 <span class="checkbox-name">Cargo Trousers</span>
                                             </label> 
@@ -411,55 +411,713 @@
                             </div>
                         </div>
                         <div class="shop__filter__size">
-                            <h4 class="shop__filter__size__title">Size
-                                <div class="shop__filter__size__title--close"><img src="assets/images/down-arrow.png"
-                                        alt=""></div>
+                            <h4 class="shop__filter__size__title">Filter by Size
                             </h4>
                             <div class="shop__filter__size__display">
-                                <div class="shop__filter__size__item">
-                                    <button class="shop__filter__size__item--button">XS <span>(3)</span></button>
-                                </div>
-                                <div class="shop__filter__size__item">
-                                    <button class="shop__filter__size__item--button">S <span>(5)</span></button>
-                                </div>
-                                <div class="shop__filter__size__item">
-                                    <button class="shop__filter__size__item--button">M <span>(7)</span></button>
-                                </div>
-                                <div class="shop__filter__size__item">
-                                    <button class="shop__filter__size__item--button">L <span>(5)</span></button>
-                                </div>
-                                <div class="shop__filter__size__item">
-                                    <button class="shop__filter__size__item--button">XL <span>(4)</span></button>
-                                </div>
+                                <ul class="shop__filter__size__ul" type="none">
+                                    <li class="shop__filter__size__item">
+                                        <a class="shop__filter__size__link" href="#">
+                                            <label for="xxs" class="checkbox-container d-flex align-items-center justify-content-start">
+                                                <input id="xxs" class="custom-checkbox" type="checkbox">
+                                                <span class="checkmark"></span>
+                                                <span class="checkbox-name">XXS</span>
+                                                <span class="checkbox-count flex-grow-1 text-end">(6)</span>
+                                            </label> 
+                                        </a>
+                                    </li>
+                                    <li class="shop__filter__size__item">
+                                        <a class="shop__filter__size__link" href="#">
+                                            <label for="xs" class="checkbox-container d-flex align-items-center justify-content-start">
+                                                <input id="xs" class="custom-checkbox" type="checkbox">
+                                                <span class="checkmark"></span>
+                                                <span class="checkbox-name">XS</span>
+                                                <span class="checkbox-count flex-grow-1 text-end">(2)</span>
+                                            </label> 
+                                        </a>
+                                    </li>
+                                    <li class="shop__filter__size__item">
+                                        <a class="shop__filter__size__link" href="#">
+                                            <label for="s" class="checkbox-container d-flex align-items-center justify-content-start">
+                                                <input id="s" class="custom-checkbox" type="checkbox">
+                                                <span class="checkmark"></span>
+                                                <span class="checkbox-name">S</span>
+                                                <span class="checkbox-count flex-grow-1 text-end">(13)</span>
+                                            </label> 
+                                        </a>
+                                    </li>
+                                    <li class="shop__filter__size__item">
+                                        <a class="shop__filter__size__link" href="#">
+                                            <label for="m" class="checkbox-container d-flex align-items-center justify-content-start">
+                                                <input id="m" class="custom-checkbox" type="checkbox">
+                                                <span class="checkmark"></span>
+                                                <span class="checkbox-name">M</span>
+                                                <span class="checkbox-count flex-grow-1 text-end">(5)</span>
+                                            </label> 
+                                        </a>
+                                    </li>
+                                    <li class="shop__filter__size__item">
+                                        <a class="shop__filter__size__link" href="#">
+                                            <label for="l" class="checkbox-container d-flex align-items-center justify-content-start">
+                                                <input id="l" class="custom-checkbox" type="checkbox">
+                                                <span class="checkmark"></span>
+                                                <span class="checkbox-name">L</span>
+                                                <span class="checkbox-count flex-grow-1 text-end">(6)</span>
+                                            </label> 
+                                        </a>
+                                    </li>
+                                    <li class="shop__filter__size__item">
+                                        <a class="shop__filter__size__link" href="#">
+                                            <label for="xl" class="checkbox-container d-flex align-items-center justify-content-start">
+                                                <input id="xl" class="custom-checkbox" type="checkbox">
+                                                <span class="checkmark"></span>
+                                                <span class="checkbox-name">XL</span>
+                                                <span class="checkbox-count flex-grow-1 text-end">(8)</span>
+                                            </label> 
+                                        </a>
+                                    </li>
+                                    <li class="shop__filter__size__item">
+                                        <a class="shop__filter__size__link" href="#">
+                                            <label for="xxl" class="checkbox-container d-flex align-items-center justify-content-start">
+                                                <input id="xxl" class="custom-checkbox" type="checkbox">
+                                                <span class="checkmark"></span>
+                                                <span class="checkbox-name">XXL</span>
+                                                <span class="checkbox-count flex-grow-1 text-end">(11)</span>
+                                            </label> 
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div class="shop__filter__availability">
-                            <h4 class="shop__filter__availability__title">Availability
-                                <div class="shop__filter__availability__title--close"><img
-                                        src="assets/images/down-arrow.png" alt=""></div>
+                            <h4 class="shop__filter__availability__title">Product Status
                             </h4>
                             <div class="shop__filter__availability__display">
                                 <ul type="none" class="shop__filter__availability__ul">
                                     <li class="shop__filter__availability__item">
                                         <a class="shop__filter__availability__link" href="#">
-                                            <input class="availability-checkbox" type="checkbox" id="in-stock"
-                                                onclick="availabilitycategoriestoggleCheck(this)">
-                                            <label for="in-stock">In stock</label>
-                                            <span class="shop__filter__availability__count">(12)</span>
+                                            <label for="in-stock" class="checkbox-container d-flex align-items-center justify-content-start">
+                                                <input id="in-stock" class="custom-checkbox" type="checkbox">
+                                                <span class="checkmark"></span>
+                                                <span class="checkbox-name">In Stock</span>
+                                            </label> 
                                         </a>
                                     </li>
                                     <li class="shop__filter__availability__item">
                                         <a class="shop__filter__availability__link" href="#">
-                                            <input class="availability-checkbox" type="checkbox" id="out-of-stock"
-                                                onclick="availabilitycategoriestoggleCheck(this)">
-                                            <label for="out-of-stock">Out of stock</label>
-                                            <span class="shop__filter__availability__count">(1)</span>
+                                            <label for="on-sale" class="checkbox-container d-flex align-items-center justify-content-start">
+                                                <input id="on-sale" class="custom-checkbox" type="checkbox">
+                                                <span class="checkmark"></span>
+                                                <span class="checkbox-name">On Sale</span>
+                                            </label> 
                                         </a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </aside>
+                    <div class="shop__content d-flex flex-column">
+                        <a class="shop__banner" href="#">
+                            <img src="assets/images/banner-26.jpg" alt="banner-26.jpg">
+                            <div class="shop__banner--text">
+                                <div class="shop__banner_title">Plus-Size Styles for Every Season</div>
+                                <div class="shop__banner_description">Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas.</div>
+                            </div>
+                        </a>
+                        <div class="shop__content--select d-flex justify-content-end gap-2">
+                            <div class="show-select">
+                                <span>Show:</span>
+                                <select class="border-0" name="show" id="show">
+                                    <option value="16-items">16 items</option>
+                                    <option value="32-items">32 items</option>
+                                    <option value="48-items">48 items</option>
+                                    <option value="64-items">64 items</option>
+                                </select>
+                            </div>
+                            <div class="select-wrap"></div>
+                            <div class="sort-select">
+                                <select class="border-0" name="sort" id="sort">
+                                    <option value="sort-by-popularity">Sort by popularity</option>
+                                    <option value="sort-by-average-raiting">Sort by average raiting</option>
+                                    <option value="sort-by-latest">Sort by latest</option>
+                                    <option value="sort-by-price-low">Sort by price: low to high</option>
+                                    <option value="sort-by-price-high">Sort by price: high to low</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="shop__content__filter-products">
+                            <div class="product-card">
+                                <div class="product-card-thumbnail">
+                                    <div class="main-image product-image">
+                                        <a href="#"><img src="assets/images/product-image1.jpg" alt="product-image1.jpg"></a>
+                                    </div>
+                                    <div class="hover-image product-image">
+                                        <a href="#"><img src="assets/images/product-image2.jpg" alt="product-image2.jpg"></a>
+                                    </div>
+                                    <div class="product-link">
+                                        <div class="add-to-card product-card-page-link">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </div>
+                                        <div class="wishlist product-card-page-link">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="compare product-card-page-link">
+                                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                        </div>
+                                        <div class="quickview product-card-page-link" onclick="openModal()">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card-text">
+                                    <div class="product-card-review">
+                                        <i class="fa-solid fa-star" style="color: #f1e909;"></i>
+                                        <span>2 review</span>
+                                    </div>
+                                    <div class="product-card-title">
+                                        <a href="#">Short Nylon-Effect Puffer Jacket</a>
+                                    </div>
+                                    <div class="product-card-price">
+                                        <div class="old-price">$22.70</div>
+                                        <div class="new-price">$18.70</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card-thumbnail">
+                                    <div class="main-image product-image"><a href="#"><img
+                                                src="assets/images/product-image3.jpeg" alt="product-image3.jpg"></a></div>
+                                    <div class="hover-image product-image"><a href="#"><img
+                                                src="assets/images/product-image4.jpeg" alt="product-image4.jpg"></a></div>
+                                    <div class="product-link">
+                                        <div class="add-to-card product-card-page-link">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </div>
+                                        <div class="wishlist product-card-page-link">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="compare product-card-page-link">
+                                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                        </div>
+                                        <div class="quickview product-card-page-link" onclick="openModal()">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card-text">
+                                    <div class="product-card-review">
+                                        <i class="fa-solid fa-star" style="color: #f1e909;"></i>
+                                        <span>1 review</span>
+                                    </div>
+                                    <div class="product-card-title">
+                                        <a href="#">Pouch Pocket Hoodie Orange</a>
+                                    </div>
+                                    <div class="product-card-price">
+                                        <div class="old-price">$24.70</div>
+                                        <div class="new-price">$20.70</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card-thumbnail">
+                                    <div class="main-image product-image"><a href="#"><img
+                                                src="assets/images/product-image5.jpeg" alt="product-image5.jpg"></a></div>
+                                    <div class="hover-image product-image"><a href="#"><img
+                                                src="assets/images/product-image6.jpeg" alt="product-image6.jpg"></a></div>
+                                    <div class="product-link">
+                                        <div class="add-to-card product-card-page-link">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </div>
+                                        <div class="wishlist product-card-page-link">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="compare product-card-page-link">
+                                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                        </div>
+                                        <div class="quickview product-card-page-link" onclick="openModal()">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card-text">
+                                    <div class="product-card-review">
+                                        <i class="fa-solid fa-star" style="color: #f1e909;"></i>
+                                        <span>4 review</span>
+                                    </div>
+                                    <div class="product-card-title">
+                                        <a href="#">Lightweight Zipped Bomber Jacket</a>
+                                    </div>
+                                    <div class="product-card-price">
+                                        <div class="old-price">$22.70</div>
+                                        <div class="new-price">$18.70</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card-thumbnail">
+                                    <div class="main-image product-image"><a href="#"><img
+                                                src="assets/images/product-image7.jpg" alt="product-image7.jpg"></a></div>
+                                    <div class="hover-image product-image"><a href="#"><img
+                                                src="assets/images/product-image8.jpg" alt="product-image8.jpg"></a></div>
+                                    <div class="product-link">
+                                        <div class="add-to-card product-card-page-link">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </div>
+                                        <div class="wishlist product-card-page-link">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="compare product-card-page-link">
+                                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                        </div>
+                                        <div class="quickview product-card-page-link" onclick="openModal()">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card-text">
+                                    <div class="product-card-review">
+                                        <i class="fa-solid fa-star" style="color: #f1e909;"></i>
+                                        <span>2 review</span>
+                                    </div>
+                                    <div class="product-card-title">
+                                        <a href="#">Long Sleeve Sweatshirt Dress</a>
+                                    </div>
+                                    <div class="product-card-price">
+                                        <div class="old-price">$22.70</div>
+                                        <div class="new-price">$18.70</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card-thumbnail">
+                                    <div class="main-image product-image"><a href="#"><img
+                                                src="assets/images/product-image9.jpeg" alt="product-image9.jpeg"></a></div>
+                                    <div class="hover-image product-image"><a href="#"><img
+                                                src="assets/images/product-image10.jpeg" alt="product-image10.jpeg"></a></div>
+                                    <div class="product-link">
+                                        <div class="add-to-card product-card-page-link">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </div>
+                                        <div class="wishlist product-card-page-link">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="compare product-card-page-link">
+                                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                        </div>
+                                        <div class="quickview product-card-page-link" onclick="openModal()">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card-text">
+                                    <div class="product-card-review">
+                                        <i class="fa-solid fa-star" style="color: #f1e909;"></i>
+                                        <span>2 review</span>
+                                    </div>
+                                    <div class="product-card-title">
+                                        <a href="#">Blue Starter Logo T-shirt</a>
+                                    </div>
+                                    <div class="product-card-price">
+                                        <div class="old-price">$22.70</div>
+                                        <div class="new-price">$18.70</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card-thumbnail">
+                                    <div class="main-image product-image"><a href="#"><img
+                                                src="assets/images/product-image11.jpg" alt="product-image11.jpg"></a></div>
+                                    <div class="hover-image product-image"><a href="#"><img
+                                                src="assets/images/product-image12.jpg" alt="product-image12.jpg"></a></div>
+                                    <div class="product-link">
+                                        <div class="add-to-card product-card-page-link">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </div>
+                                        <div class="wishlist product-card-page-link">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="compare product-card-page-link">
+                                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                        </div>
+                                        <div class="quickview product-card-page-link" onclick="openModal()">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card-text">
+                                    <div class="product-card-review">
+                                        <i class="fa-solid fa-star" style="color: #f1e909;"></i>
+                                        <span>2 review</span>
+                                    </div>
+                                    <div class="product-card-title">
+                                        <a href="#">Long Sleeve Sweatshirt Dress</a>
+                                    </div>
+                                    <div class="product-card-price">
+                                        <div class="old-price">$22.70</div>
+                                        <div class="new-price">$18.70</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card-thumbnail">
+                                    <div class="main-image product-image"><a href="#"><img
+                                                src="assets/images/product-image3.jpeg" alt="product-image3.jpg"></a></div>
+                                    <div class="hover-image product-image"><a href="#"><img
+                                                src="assets/images/product-image4.jpeg" alt="product-image4.jpg"></a></div>
+                                    <div class="product-link">
+                                        <div class="add-to-card product-card-page-link">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </div>
+                                        <div class="wishlist product-card-page-link">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="compare product-card-page-link">
+                                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                        </div>
+                                        <div class="quickview product-card-page-link" onclick="openModal()">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card-text">
+                                    <div class="product-card-review">
+                                        <i class="fa-solid fa-star" style="color: #f1e909;"></i>
+                                        <span>1 review</span>
+                                    </div>
+                                    <div class="product-card-title">
+                                        <a href="#">Pouch Pocket Hoodie Orange</a>
+                                    </div>
+                                    <div class="product-card-price">
+                                        <div class="old-price">$24.70</div>
+                                        <div class="new-price">$20.70</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card-thumbnail">
+                                    <div class="main-image product-image"><a href="#"><img
+                                                src="assets/images/product-image5.jpeg" alt="product-image5.jpg"></a></div>
+                                    <div class="hover-image product-image"><a href="#"><img
+                                                src="assets/images/product-image6.jpeg" alt="product-image6.jpg"></a></div>
+                                    <div class="product-link">
+                                        <div class="add-to-card product-card-page-link">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </div>
+                                        <div class="wishlist product-card-page-link">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="compare product-card-page-link">
+                                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                        </div>
+                                        <div class="quickview product-card-page-link" onclick="openModal()">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card-text">
+                                    <div class="product-card-review">
+                                        <i class="fa-solid fa-star" style="color: #f1e909;"></i>
+                                        <span>4 review</span>
+                                    </div>
+                                    <div class="product-card-title">
+                                        <a href="#">Lightweight Zipped Bomber Jacket</a>
+                                    </div>
+                                    <div class="product-card-price">
+                                        <div class="old-price">$22.70</div>
+                                        <div class="new-price">$18.70</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card-thumbnail">
+                                    <div class="main-image product-image"><a href="#"><img
+                                                src="assets/images/product-image7.jpg" alt="product-image7.jpg"></a></div>
+                                    <div class="hover-image product-image"><a href="#"><img
+                                                src="assets/images/product-image8.jpg" alt="product-image8.jpg"></a></div>
+                                    <div class="product-link">
+                                        <div class="add-to-card product-card-page-link">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </div>
+                                        <div class="wishlist product-card-page-link">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="compare product-card-page-link">
+                                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                        </div>
+                                        <div class="quickview product-card-page-link" onclick="openModal()">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card-text">
+                                    <div class="product-card-review">
+                                        <i class="fa-solid fa-star" style="color: #f1e909;"></i>
+                                        <span>2 review</span>
+                                    </div>
+                                    <div class="product-card-title">
+                                        <a href="#">Long Sleeve Sweatshirt Dress</a>
+                                    </div>
+                                    <div class="product-card-price">
+                                        <div class="old-price">$22.70</div>
+                                        <div class="new-price">$18.70</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card-thumbnail">
+                                    <div class="main-image product-image"><a href="#"><img
+                                                src="assets/images/product-image5.jpeg" alt="product-image5.jpg"></a></div>
+                                    <div class="hover-image product-image"><a href="#"><img
+                                                src="assets/images/product-image6.jpeg" alt="product-image6.jpg"></a></div>
+                                    <div class="product-link">
+                                        <div class="add-to-card product-card-page-link">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </div>
+                                        <div class="wishlist product-card-page-link">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="compare product-card-page-link">
+                                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                        </div>
+                                        <div class="quickview product-card-page-link" onclick="openModal()">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card-text">
+                                    <div class="product-card-review">
+                                        <i class="fa-solid fa-star" style="color: #f1e909;"></i>
+                                        <span>4 review</span>
+                                    </div>
+                                    <div class="product-card-title">
+                                        <a href="#">Lightweight Zipped Bomber Jacket</a>
+                                    </div>
+                                    <div class="product-card-price">
+                                        <div class="old-price">$22.70</div>
+                                        <div class="new-price">$18.70</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card-thumbnail">
+                                    <div class="main-image product-image"><a href="#"><img
+                                                src="assets/images/product-image7.jpg" alt="product-image7.jpg"></a></div>
+                                    <div class="hover-image product-image"><a href="#"><img
+                                                src="assets/images/product-image8.jpg" alt="product-image8.jpg"></a></div>
+                                    <div class="product-link">
+                                        <div class="add-to-card product-card-page-link">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </div>
+                                        <div class="wishlist product-card-page-link">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="compare product-card-page-link">
+                                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                        </div>
+                                        <div class="quickview product-card-page-link" onclick="openModal()">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card-text">
+                                    <div class="product-card-review">
+                                        <i class="fa-solid fa-star" style="color: #f1e909;"></i>
+                                        <span>2 review</span>
+                                    </div>
+                                    <div class="product-card-title">
+                                        <a href="#">Long Sleeve Sweatshirt Dress</a>
+                                    </div>
+                                    <div class="product-card-price">
+                                        <div class="old-price">$22.70</div>
+                                        <div class="new-price">$18.70</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card-thumbnail">
+                                    <div class="main-image product-image"><a href="#"><img
+                                                src="assets/images/product-image9.jpeg" alt="product-image9.jpeg"></a></div>
+                                    <div class="hover-image product-image"><a href="#"><img
+                                                src="assets/images/product-image10.jpeg" alt="product-image10.jpeg"></a></div>
+                                    <div class="product-link">
+                                        <div class="add-to-card product-card-page-link">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </div>
+                                        <div class="wishlist product-card-page-link">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="compare product-card-page-link">
+                                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                        </div>
+                                        <div class="quickview product-card-page-link" onclick="openModal()">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card-text">
+                                    <div class="product-card-review">
+                                        <i class="fa-solid fa-star" style="color: #f1e909;"></i>
+                                        <span>2 review</span>
+                                    </div>
+                                    <div class="product-card-title">
+                                        <a href="#">Blue Starter Logo T-shirt</a>
+                                    </div>
+                                    <div class="product-card-price">
+                                        <div class="old-price">$22.70</div>
+                                        <div class="new-price">$18.70</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card-thumbnail">
+                                    <div class="main-image product-image"><a href="#"><img
+                                                src="assets/images/product-image11.jpg" alt="product-image11.jpg"></a></div>
+                                    <div class="hover-image product-image"><a href="#"><img
+                                                src="assets/images/product-image12.jpg" alt="product-image12.jpg"></a></div>
+                                    <div class="product-link">
+                                        <div class="add-to-card product-card-page-link">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </div>
+                                        <div class="wishlist product-card-page-link">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="compare product-card-page-link">
+                                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                        </div>
+                                        <div class="quickview product-card-page-link" onclick="openModal()">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card-text">
+                                    <div class="product-card-review">
+                                        <i class="fa-solid fa-star" style="color: #f1e909;"></i>
+                                        <span>2 review</span>
+                                    </div>
+                                    <div class="product-card-title">
+                                        <a href="#">Long Sleeve Sweatshirt Dress</a>
+                                    </div>
+                                    <div class="product-card-price">
+                                        <div class="old-price">$22.70</div>
+                                        <div class="new-price">$18.70</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card-thumbnail">
+                                    <div class="main-image product-image"><a href="#"><img
+                                                src="assets/images/product-image3.jpeg" alt="product-image3.jpg"></a></div>
+                                    <div class="hover-image product-image"><a href="#"><img
+                                                src="assets/images/product-image4.jpeg" alt="product-image4.jpg"></a></div>
+                                    <div class="product-link">
+                                        <div class="add-to-card product-card-page-link">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </div>
+                                        <div class="wishlist product-card-page-link">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="compare product-card-page-link">
+                                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                        </div>
+                                        <div class="quickview product-card-page-link" onclick="openModal()">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card-text">
+                                    <div class="product-card-review">
+                                        <i class="fa-solid fa-star" style="color: #f1e909;"></i>
+                                        <span>1 review</span>
+                                    </div>
+                                    <div class="product-card-title">
+                                        <a href="#">Pouch Pocket Hoodie Orange</a>
+                                    </div>
+                                    <div class="product-card-price">
+                                        <div class="old-price">$24.70</div>
+                                        <div class="new-price">$20.70</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card-thumbnail">
+                                    <div class="main-image product-image"><a href="#"><img
+                                                src="assets/images/product-image5.jpeg" alt="product-image5.jpg"></a></div>
+                                    <div class="hover-image product-image"><a href="#"><img
+                                                src="assets/images/product-image6.jpeg" alt="product-image6.jpg"></a></div>
+                                    <div class="product-link">
+                                        <div class="add-to-card product-card-page-link">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </div>
+                                        <div class="wishlist product-card-page-link">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="compare product-card-page-link">
+                                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                        </div>
+                                        <div class="quickview product-card-page-link" onclick="openModal()">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card-text">
+                                    <div class="product-card-review">
+                                        <i class="fa-solid fa-star" style="color: #f1e909;"></i>
+                                        <span>4 review</span>
+                                    </div>
+                                    <div class="product-card-title">
+                                        <a href="#">Lightweight Zipped Bomber Jacket</a>
+                                    </div>
+                                    <div class="product-card-price">
+                                        <div class="old-price">$22.70</div>
+                                        <div class="new-price">$18.70</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card">
+                                <div class="product-card-thumbnail">
+                                    <div class="main-image product-image"><a href="#"><img
+                                                src="assets/images/product-image7.jpg" alt="product-image7.jpg"></a></div>
+                                    <div class="hover-image product-image"><a href="#"><img
+                                                src="assets/images/product-image8.jpg" alt="product-image8.jpg"></a></div>
+                                    <div class="product-link">
+                                        <div class="add-to-card product-card-page-link">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </div>
+                                        <div class="wishlist product-card-page-link">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="compare product-card-page-link">
+                                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                        </div>
+                                        <div class="quickview product-card-page-link" onclick="openModal()">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card-text">
+                                    <div class="product-card-review">
+                                        <i class="fa-solid fa-star" style="color: #f1e909;"></i>
+                                        <span>2 review</span>
+                                    </div>
+                                    <div class="product-card-title">
+                                        <a href="#">Long Sleeve Sweatshirt Dress</a>
+                                    </div>
+                                    <div class="product-card-price">
+                                        <div class="old-price">$22.70</div>
+                                        <div class="new-price">$18.70</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="center m-5">
+                            <div class="pagination">
+                                <a class="pagination__prev-btn" href="#">&laquo;</a>
+                                <a class="pagination__item pagination-active" href="#">1</a>
+                                <a class="pagination__item" href="#" class="active">2</a>
+                                <a class="pagination__item" href="#">3</a>
+                                <a class="pagination__next-btn" href="#">&raquo;</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
