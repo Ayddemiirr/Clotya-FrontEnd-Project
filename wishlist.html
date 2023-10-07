@@ -9,7 +9,7 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/scss/index.css">
-    <title>Blog</title>
+    <title>Wishlist</title>
 </head>
 
 <body>
@@ -187,150 +187,105 @@
     </header>
 
     <main>
-        <section id="blog">
+        <section id="wishlist">
             <div class="container">
-                <div class="blog-wrapper d-flex justify-content-between">
-                    <div class="blog-posts">
-                        <div class="blog-item row">
-                            <div class="blog-image col-12">
-                                <a href="#"><img class="col-12" src="assets/images/blog-4.jpg" alt="blog-4.jpg"></a>
-                            </div>
-                            <div class="blog-text col-12">
-                                <a class="blog-category col-12 d-flex align-items-center"
-                                    href="#"><span>Collection</span>
-                                    <div class="category-line"></div> 25 Apr 2022
-                                </a>
-                                <a href="#" class="blog-title">The Best Products That Shape Fashion</a>
-                                <p class="blog-description">Donec rhoncus quis diam sit amet faucibus. Vivamus
-                                    pellentesque, sem sed convallis ultricies, ante eros laoreet libero, vitae suscipit
-                                    lorem turpis sit amet lectus. Quisque egestas lorem ut mauris ultrices, vitae
-                                    sollicitudin quam facilisis. Vivamus rutrum urna non ligula tempor aliquet. Fusce
-                                    tincidunt est magna, id malesuada massa imperdiet ut. Nunc non nisi urna. Nam
-                                </p>
-                                <a class="blog-link d-flex align-items-center" href="#">Read More <i
-                                        class="fa-solid fa-arrow-right-long"></i></a>
-                            </div>
-                        </div>
-                        <div class="blog-item row">
-                            <div class="blog-image col-12">
-                                <a href="#"><img class="col-12" src="assets/images/blog-5.jpg" alt="blog-5.jpg"></a>
-                            </div>
-                            <div class="blog-text col-12">
-                                <a class="blog-category col-12 d-flex align-items-center" href="#"><span>FASHION</span>
-                                    <div class="category-line"></div> 25 Apr 2022
-                                </a>
-                                <a href="#" class="blog-title">New Finds From Tuckernuck</a>
-                                <p class="blog-description">Donec rhoncus quis diam sit amet faucibus. Vivamus
-                                    pellentesque, sem sed convallis ultricies, ante eros laoreet libero, vitae suscipit
-                                    lorem turpis sit amet lectus. Quisque egestas lorem ut mauris ultrices, vitae
-                                    sollicitudin quam facilisis. Vivamus rutrum urna non ligula tempor aliquet. Fusce
-                                    tincidunt est magna, id malesuada massa imperdiet ut. Nunc non nisi urna. Nam</p>
-                                <a class="blog-link d-flex align-items-center" href="#">Read More <i
-                                        class="fa-solid fa-arrow-right-long"></i></a>
-                            </div>
-                        </div>
-                        <div class="blog-item row">
-                            <div class="blog-image col-12">
-                                <a href="#"><img class="col-12" src="assets/images/blog-6.jpg" alt="blog-6.jpg"></a>
-                            </div>
-                            <div class="blog-text col-12">
-                                <a class="blog-category col-12 d-flex align-items-center" href="#"><span>CLOTHING</span>
-                                    <div class="category-line"></div> 25 Apr 2022
-                                </a>
-                                <a href="#" class="blog-title">Sunset Sets From Saks</a>
-                                <p class="blog-description">Donec rhoncus quis diam sit amet faucibus. Vivamus
-                                    pellentesque, sem sed convallis ultricies, ante eros laoreet libero, vitae suscipit
-                                    lorem turpis sit amet lectus. Quisque egestas lorem ut mauris ultrices, vitae
-                                    sollicitudin quam facilisis. Vivamus rutrum urna non ligula tempor aliquet. Fusce
-                                    tincidunt est magna, id malesuada massa imperdiet ut. Nunc non nisi urna. Nam
-                                </p>
-                                <a class="blog-link d-flex align-items-center" href="#">Read More <i
-                                        class="fa-solid fa-arrow-right-long"></i></a>
-                            </div>
-                        </div>
-                        <div class="center">
-                            <div class="pagination">
-                                <a class="pagination__prev-btn" href="#">&laquo;</a>
-                                <a class="pagination__item pagination-active" href="#">1</a>
-                                <a class="pagination__item" href="#" class="active">2</a>
-                                <a class="pagination__item" href="#">3</a>
-                                <a class="pagination__next-btn" href="#">&raquo;</a>
-                            </div>
-                        </div>
+                <div class="wishlist-wrapper">
+                    <h3>Default wishlist</h3>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th scope="col"><input type="checkbox" name="select" id="select"></th>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                                <th scope="col">Product Name</th>
+                                <th scope="col">Unit Price</th>
+                                <th scope="col">Date Added</th>
+                                <th scope="col">Stock Status</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width: 45.8px;">
+                                    <div class="product-select center-item h-100">
+                                        <input type="checkbox" name="select-item" id="select-item">
+                                    </div>
+                                </td>
+                                <td style="width: 43.8px;">
+                                    <div class="product-delete center-item">
+                                        <div class="x-mark">
+                                            <i class="fa-solid fa-xmark"></i>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td style="width: 100px;">
+                                    <div class="product-image center-item">
+                                        <a href="#">
+                                            <img src="assets/images/product-image3.jpeg" alt="product-image1.jpg">
+                                        </a>
+                                    </div>
+                                </td>
+                                <td style="width: 413.56px;">
+                                    <a href="#" class="product-title center-item">
+                                        Check Overshirt With Pocket Detail
+                                    </a>
+                                </td>
+                                <td style="width: 188.34px;">
+                                    <div class="product-price center-item gap-2">
+                                        <del class="old-price">$24.00</del>
+                                        <ins class="new-price">$20.00</ins>
+                                    </div>
+                                </td>
+                                <td style="width: 181.26px;">
+                                    <div class="product-date center-item">
+                                        <span>October 7,2023</span>
+                                    </div>
+                                </td>
+                                <td style="width: 144.96px;">
+                                    <div class="product-stock d-flex gap-3 align-items-center center-item">
+                                        <i class="fa-solid fa-check"></i>
+                                        In Stock
+                                    </div>
+                                </td>
+                                <td style="width: 141.48px;">
+                                    <div class="product-button center-item">
+                                        <button class="product-add-btn">Add to Cart</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="100">
+                                    <div class="wishlist-footer d-flex justify-content-between">
+                                        <div class="product-action">
+                                            <select name="actions" id="actions">
+                                                <option value="actions">Actions</option>
+                                                <option value="add-to-cart">Add to Cart</option>
+                                                <option value="Remove">Remove</option>
+                                            </select>
+                                            <button class="apply-action product-add-btn">Apply-action</button>
+                                        </div>
+                                        <div class="product-add-buttons">
+                                            <button class="add-selected product-add-btn">Add Selected to Cart</button>
+                                            <button class="add-cart product-add-btn">Add All to Cart</button>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div class="share-on d-flex align-items-center align-self-end gap-4 mt-4">
+                        <span>Share-on</span>
+                        <ul type="none" class="d-flex align-items-center">
+                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                            <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                            <li><a href="#"><i class="fa-regular fa-clipboard"></i></a></li>
+                            <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                        </ul>
                     </div>
-                    <aside id="sidebar">
-                        <div class="blogs-search">
-                            <input type="text" placeholder="Search...">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                        <div class="popular-posts">
-                            <h3>Popular Posts</h3>
-                            <div class="popular-item">
-                                <a class="row d-flex justify-content-between" href="#">
-                                    <figure class="popular-item-image col-4">
-                                        <img src="assets/images/blog-4-100x100.jpg" alt="blog-4-100x100.jpg">
-                                    </figure>
-                                    <div class="popular-item-text col-8">
-                                        <div class="popular-item-date">
-                                            April 25, 2022
-                                        </div>
-                                        <p class="popular-item-title">
-                                            New Finds From Tuckernuck
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="popular-item">
-                                <a class="row d-flex justify-content-between" href="#">
-                                    <figure class="popular-item-image col-4">
-                                        <img src="assets/images/blog-5-100x100.jpg" alt="blog-5-100x100.jpg">
-                                    </figure>
-                                    <div class="popular-item-text col-8">
-                                        <div class="popular-item-date">
-                                            April 25, 2022
-                                        </div>
-                                        <p class="popular-item-title">
-                                            The Best Product That Shape Fashion
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="popular-item">
-                                <a class="row d-flex justify-content-between" href="#">
-                                    <figure class="popular-item-image col-4">
-                                        <img src="assets/images/blog-6-100x100.jpg" alt="blog-6-100x100.jpg">
-                                    </figure>
-                                    <div class="popular-item-text col-8">
-                                        <div class="popular-item-date">
-                                            April 25, 2022
-                                        </div>
-                                        <p class="popular-item-title">
-                                            Sunset Sets From Saks
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="blog-categories">
-                            <h3>Categories</h3>
-                            <ul type="none" class="row d-flex flex-column gap-2">
-                                <li><a href="#"><i class="fa-solid fa-angle-right"></i> Clothing</a></li>
-                                <li><a href="#"><i class="fa-solid fa-angle-right"></i> Collection</a></li>
-                                <li><a href="#"><i class="fa-solid fa-angle-right"></i> Dresses</a></li>
-                                <li><a href="#"><i class="fa-solid fa-angle-right"></i> Fashion</a></li>
-                            </ul>
-                        </div>
-                        <div class="blog-tags">
-                            <h3>Tags</h3>
-                            <a href="#" class="tag-item">clothing</a>
-                            <a href="#" class="tag-item">fashion</a>
-                            <a href="#" class="tag-item">klbtheme</a>
-                            <a href="#" class="tag-item">products</a>
-                            <a href="#" class="tag-item">store</a>
-                            <a href="#" class="tag-item">themeforest</a>
-                            <a href="#" class="tag-item">woocommerce</a>
-                        </div>
-                    </aside>
                 </div>
             </div>
         </section>
@@ -362,6 +317,7 @@
             </div>
         </div>
     </section>
+    
     <footer>
         <div class="container">
             <div class="footer-wrapper">
@@ -418,7 +374,6 @@
         </div>
     </footer>
 
-    <script src="assets/js/blog.js"></script>
 </body>
 
 </html>

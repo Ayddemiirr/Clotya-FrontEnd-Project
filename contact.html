@@ -9,7 +9,7 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/scss/index.css">
-    <title>Blog</title>
+    <title>Document</title>
 </head>
 
 <body>
@@ -187,151 +187,64 @@
     </header>
 
     <main>
-        <section id="blog">
-            <div class="container">
-                <div class="blog-wrapper d-flex justify-content-between">
-                    <div class="blog-posts">
-                        <div class="blog-item row">
-                            <div class="blog-image col-12">
-                                <a href="#"><img class="col-12" src="assets/images/blog-4.jpg" alt="blog-4.jpg"></a>
+        <div id="contact-head">
+            <img src="assets/images/image-15-pqcdr1rlo5zgkmf9mhlpgtdb7vxe92fhkbv7njwet4.jpg" alt="">
+        </div>
+    
+        <section id="get-in-touch">
+            <div class="get-in-touch-wrapper">
+                <div class="get-in-touch-left">
+                    <div class="get-in-touch-left-content">
+                        <h4>Contact with us</h4>
+                        <h1>Get In Touch</h1>
+                        <p>In hac habitasse platea dictumst. Pellentesque viverra sem nec orci lacinia, in bibendum urna
+                            mollis. Quisque nunc lacus, varius vel leo a, pretium lobortis metus. Vivamus consectetur
+                            consequat justo.</p>
+                        <form action="#" class="row mt-4 d-flex justify-content-between">
+                            <div class="form-group col-12 col-lg-6">
+                                <label for="name">Your name *</label>
+                                <input id="name" type="text">
                             </div>
-                            <div class="blog-text col-12">
-                                <a class="blog-category col-12 d-flex align-items-center"
-                                    href="#"><span>Collection</span>
-                                    <div class="category-line"></div> 25 Apr 2022
-                                </a>
-                                <a href="#" class="blog-title">The Best Products That Shape Fashion</a>
-                                <p class="blog-description">Donec rhoncus quis diam sit amet faucibus. Vivamus
-                                    pellentesque, sem sed convallis ultricies, ante eros laoreet libero, vitae suscipit
-                                    lorem turpis sit amet lectus. Quisque egestas lorem ut mauris ultrices, vitae
-                                    sollicitudin quam facilisis. Vivamus rutrum urna non ligula tempor aliquet. Fusce
-                                    tincidunt est magna, id malesuada massa imperdiet ut. Nunc non nisi urna. Nam
-                                </p>
-                                <a class="blog-link d-flex align-items-center" href="#">Read More <i
-                                        class="fa-solid fa-arrow-right-long"></i></a>
+                            <div class="form-group col-12 col-lg-6">
+                                <label for="email">Your email *</label>
+                                <input id="email" type="email">
                             </div>
-                        </div>
-                        <div class="blog-item row">
-                            <div class="blog-image col-12">
-                                <a href="#"><img class="col-12" src="assets/images/blog-5.jpg" alt="blog-5.jpg"></a>
+                            <div class="form-item col-12 col-lg-12">
+                                <label class="col-12" for="subject">Subject *</label>
+                                <input class="12" id="subject" type="text">
                             </div>
-                            <div class="blog-text col-12">
-                                <a class="blog-category col-12 d-flex align-items-center" href="#"><span>FASHION</span>
-                                    <div class="category-line"></div> 25 Apr 2022
-                                </a>
-                                <a href="#" class="blog-title">New Finds From Tuckernuck</a>
-                                <p class="blog-description">Donec rhoncus quis diam sit amet faucibus. Vivamus
-                                    pellentesque, sem sed convallis ultricies, ante eros laoreet libero, vitae suscipit
-                                    lorem turpis sit amet lectus. Quisque egestas lorem ut mauris ultrices, vitae
-                                    sollicitudin quam facilisis. Vivamus rutrum urna non ligula tempor aliquet. Fusce
-                                    tincidunt est magna, id malesuada massa imperdiet ut. Nunc non nisi urna. Nam</p>
-                                <a class="blog-link d-flex align-items-center" href="#">Read More <i
-                                        class="fa-solid fa-arrow-right-long"></i></a>
+                            <div class="form-item col-12 col-lg-12">
+                                <label class="col-12" for="message">Your message *</label>
+                                <textarea class="col-12" name="message" id="message" cols="40" rows="10"></textarea>
                             </div>
-                        </div>
-                        <div class="blog-item row">
-                            <div class="blog-image col-12">
-                                <a href="#"><img class="col-12" src="assets/images/blog-6.jpg" alt="blog-6.jpg"></a>
-                            </div>
-                            <div class="blog-text col-12">
-                                <a class="blog-category col-12 d-flex align-items-center" href="#"><span>CLOTHING</span>
-                                    <div class="category-line"></div> 25 Apr 2022
-                                </a>
-                                <a href="#" class="blog-title">Sunset Sets From Saks</a>
-                                <p class="blog-description">Donec rhoncus quis diam sit amet faucibus. Vivamus
-                                    pellentesque, sem sed convallis ultricies, ante eros laoreet libero, vitae suscipit
-                                    lorem turpis sit amet lectus. Quisque egestas lorem ut mauris ultrices, vitae
-                                    sollicitudin quam facilisis. Vivamus rutrum urna non ligula tempor aliquet. Fusce
-                                    tincidunt est magna, id malesuada massa imperdiet ut. Nunc non nisi urna. Nam
-                                </p>
-                                <a class="blog-link d-flex align-items-center" href="#">Read More <i
-                                        class="fa-solid fa-arrow-right-long"></i></a>
-                            </div>
-                        </div>
-                        <div class="center">
-                            <div class="pagination">
-                                <a class="pagination__prev-btn" href="#">&laquo;</a>
-                                <a class="pagination__item pagination-active" href="#">1</a>
-                                <a class="pagination__item" href="#" class="active">2</a>
-                                <a class="pagination__item" href="#">3</a>
-                                <a class="pagination__next-btn" href="#">&raquo;</a>
-                            </div>
+                            <button class="send-message"><span>Send Message</span></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="get-in-touch-right">
+                    <div class="clotya-store d-flex gap-3 mb-5">
+                        <div class="right-icon"><i class="fa-solid fa-store"></i></div>
+                        <div class="right-wrapper d-flex flex-column gap-3">
+                            <h4>Clotya Store</h4>
+                            <p>Germany — 785 15h Street, Office 478/B Green Mall Berlin, De 81566</p>
+                            <p>Phone: +1 1234 567 88 <br>Email: <a href="#">contact@example.com</a></p>
                         </div>
                     </div>
-                    <aside id="sidebar">
-                        <div class="blogs-search">
-                            <input type="text" placeholder="Search...">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                    <div class="opening-hours d-flex gap-3">
+                        <div class="right-icon">
+                            <i class="fa-solid fa-shop"></i>
                         </div>
-                        <div class="popular-posts">
-                            <h3>Popular Posts</h3>
-                            <div class="popular-item">
-                                <a class="row d-flex justify-content-between" href="#">
-                                    <figure class="popular-item-image col-4">
-                                        <img src="assets/images/blog-4-100x100.jpg" alt="blog-4-100x100.jpg">
-                                    </figure>
-                                    <div class="popular-item-text col-8">
-                                        <div class="popular-item-date">
-                                            April 25, 2022
-                                        </div>
-                                        <p class="popular-item-title">
-                                            New Finds From Tuckernuck
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="popular-item">
-                                <a class="row d-flex justify-content-between" href="#">
-                                    <figure class="popular-item-image col-4">
-                                        <img src="assets/images/blog-5-100x100.jpg" alt="blog-5-100x100.jpg">
-                                    </figure>
-                                    <div class="popular-item-text col-8">
-                                        <div class="popular-item-date">
-                                            April 25, 2022
-                                        </div>
-                                        <p class="popular-item-title">
-                                            The Best Product That Shape Fashion
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="popular-item">
-                                <a class="row d-flex justify-content-between" href="#">
-                                    <figure class="popular-item-image col-4">
-                                        <img src="assets/images/blog-6-100x100.jpg" alt="blog-6-100x100.jpg">
-                                    </figure>
-                                    <div class="popular-item-text col-8">
-                                        <div class="popular-item-date">
-                                            April 25, 2022
-                                        </div>
-                                        <p class="popular-item-title">
-                                            Sunset Sets From Saks
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
+                        <div class="right-wrapper d-flex flex-column gap-3">
+                            <h4>Opening Hours</h4>
+                            <p>Monday - Friday : 9am - 5pm <br> Weekend Closed</p>
                         </div>
-                        <div class="blog-categories">
-                            <h3>Categories</h3>
-                            <ul type="none" class="row d-flex flex-column gap-2">
-                                <li><a href="#"><i class="fa-solid fa-angle-right"></i> Clothing</a></li>
-                                <li><a href="#"><i class="fa-solid fa-angle-right"></i> Collection</a></li>
-                                <li><a href="#"><i class="fa-solid fa-angle-right"></i> Dresses</a></li>
-                                <li><a href="#"><i class="fa-solid fa-angle-right"></i> Fashion</a></li>
-                            </ul>
-                        </div>
-                        <div class="blog-tags">
-                            <h3>Tags</h3>
-                            <a href="#" class="tag-item">clothing</a>
-                            <a href="#" class="tag-item">fashion</a>
-                            <a href="#" class="tag-item">klbtheme</a>
-                            <a href="#" class="tag-item">products</a>
-                            <a href="#" class="tag-item">store</a>
-                            <a href="#" class="tag-item">themeforest</a>
-                            <a href="#" class="tag-item">woocommerce</a>
-                        </div>
-                    </aside>
+                    </div>
                 </div>
+            </div>
+            <div class="elementor-widget-container">
+                In hac habitasse platea dictumst. Pellentesque viverra sem nec orci lacinia, in bibendum urna mollis.
+                Quisque nunc lacus, varius vel leo a, pretium lobortis metus. Vivamus consectetur consequat justo. Sed
+                interdum nunc ut tristique congue. Quisque maximus mauris et dui sagittis scelerisque.
             </div>
         </section>
     </main>
@@ -362,6 +275,7 @@
             </div>
         </div>
     </section>
+
     <footer>
         <div class="container">
             <div class="footer-wrapper">
@@ -417,8 +331,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="assets/js/blog.js"></script>
 </body>
 
 </html>

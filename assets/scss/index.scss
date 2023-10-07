@@ -328,6 +328,7 @@ header {
                     display: grid;
                     place-content: center;
                     cursor: pointer;
+                    color: rgba(30, 30, 30,0.85);
                 }
 
                 .search-toggle {
@@ -343,6 +344,8 @@ header {
                     place-content: center;
                     cursor: pointer;
                     position: relative;
+                    text-decoration: none;
+                    color: rgba(30, 30, 30,0.85);
 
                     .header-wishlist-count {
                         position: absolute;
@@ -366,6 +369,8 @@ header {
                     place-content: center;
                     cursor: pointer;
                     position: relative;
+                    text-decoration: none;
+                    color: rgba(30, 30, 30,0.85);
 
                     .header-cart-price {
                         margin-right: 6px !important;
@@ -1553,3 +1558,6 @@ footer{
 
 @import './pages/blog';
 @import './pages/shop';
+@import './pages/contact';
+@import './pages/wishlist';
+@import './pages/my-account';

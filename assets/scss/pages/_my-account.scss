@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+$custom-text-color: rgb(33, 37, 41);
+$custom-text-border: 1px solid rgba(26, 72, 69, 0.2);
+$custom-font-family: 'Jost',sans-serif;
+$custom-red-color: #EE403D;
+
+
+#my-account{
+    width: 1260px;
+    height: 603.4px;
+    margin: 0 auto !important;
+    margin-top: 88px !important;
+    margin-bottom: 88px !important;
+    display: grid;
+    place-content: center;
+
+    .my-account-wrapper{
+        width: 530px;
+        height: 590.4px;
+        padding-inline: 15px !important;
+        border: $custom-text-border;
+        padding: 60px !important;
+
+        ul{
+            width: min-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 60px !important;
+
+            li{
+                font: normal 600 17px/25.56px $custom-font-family;
+                text-transform: uppercase;
+                color: rgb(194, 194, 211);
+                cursor: pointer;
+
+                &.tab-active{
+                    color: #000;
+                }
+            }
+        }
+
+        .tab-menu{
+            width: 408.4px;
+            height: 413.2px;
+            display: none;
+
+            &.menu-active{
+                display: block;
+            }
+
+            label{
+                font: normal 400 14px/21px $custom-font-family;
+                letter-spacing: -0.03px;
+                margin-bottom: 5px !important;
+            }
+
+            input{
+                height: 42px;
+                padding: 8px 15px !important;
+                border: 1px solid rgba(143, 143, 143,0.5);
+                border-radius: 2px;
+            }
+        }
+
+        .account-btn{
+            height: 42px;
+            border: none;
+            border-radius: 2px;
+            background-color: rgb(238, 64, 61);
+            color: #fff;
+
+            &:hover{
+                opacity: 0.9;
+            }
+        }
+        .reset-btn{
+            color: rgb(238, 64, 61);
+            text-decoration: none;
+            margin-top: 14px !important;
+            display: block;
+        }
+
+        p{
+            margin-top: 4px !important;
+            margin-bottom: 16px !important;
+            font: normal 400 13px/20.8px $custom-font-family;
+            color: #000;
+
+            a{
+                color: rgb(238, 64, 61);
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@import './reset.password';
