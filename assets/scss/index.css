@@ -5,6 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0 !important;
   padding: 0 !important;
@@ -2620,4 +2621,228 @@ footer .footer-wrapper .footer-bottom ul li a {
 }
 #reset-password .reset-password-wrapper button:hover {
   opacity: 0.9;
+}
+
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.container {
+  max-width: 1260.2px;
+  margin: 0 auto !important;
+}
+
+#cart {
+  margin-top: 60px !important;
+  margin-bottom: 80px !important;
+}
+#cart .cart-wrapper .cart-left {
+  width: 844.2px;
+}
+#cart .cart-wrapper .cart-left .free-shipping {
+  height: 77.1px;
+  padding: 20px !important;
+  border: 1px solid rgb(222, 224, 234);
+}
+#cart .cart-wrapper .cart-left .free-shipping .free-shipping-notice {
+  font: normal 400 13px/19.5px "Jost", sans-serif;
+  padding-bottom: 10px !important;
+}
+#cart .cart-wrapper .cart-left .free-shipping .free-shipping-notice span {
+  color: rgb(238, 64, 61);
+  font-weight: 700;
+}
+#cart .cart-wrapper .cart-left .free-shipping .progress-bar {
+  height: 6px;
+  border-radius: 10px;
+  background-color: rgb(242, 243, 245);
+}
+#cart .cart-wrapper .cart-left .free-shipping .progress-bar span {
+  width: 24%;
+  background-color: rgb(238, 64, 61);
+  border-radius: 10px;
+}
+#cart .cart-wrapper .cart-left table {
+  border: 0.8px solid #ddd;
+  border-inline: none;
+  border-top: none;
+}
+#cart .cart-wrapper .cart-left th {
+  font: normal 500 14px/21px "Jost", sans-serif;
+  color: rgb(33, 37, 41);
+  opacity: 0.3;
+  text-align: center;
+}
+#cart .cart-wrapper .cart-left td {
+  padding: 12px 15px !important;
+  height: 80px;
+}
+#cart .cart-wrapper .cart-left .center-item {
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+}
+#cart .cart-wrapper .cart-left .cart-item {
+  width: 450px;
+}
+#cart .cart-wrapper .cart-left .cart-thumbnail {
+  position: relative;
+}
+#cart .cart-wrapper .cart-left .cart-thumbnail img {
+  width: 60px;
+  height: 90px;
+}
+#cart .cart-wrapper .cart-left .cart-deleteBtn {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: -6px;
+  left: -10px;
+  font-size: 12px;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  background-color: #EE403D;
+  color: #fff;
+  cursor: pointer;
+}
+#cart .cart-wrapper .cart-left .shopping-cart__item__count {
+  width: -moz-max-content;
+  width: max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border: 1px solid rgba(33, 37, 41, 0.2);
+}
+#cart .cart-wrapper .cart-left .shopping-cart__item__count button {
+  width: 25px;
+  height: 33.4px;
+  border: none;
+  background-color: white;
+}
+#cart .cart-wrapper .cart-left .shopping-cart__item__count button i {
+  font-size: 13px;
+  color: rgb(175, 169, 169);
+}
+#cart .cart-wrapper .cart-left .shopping-cart__item__count button:hover {
+  cursor: pointer;
+}
+#cart .cart-wrapper .cart-left .shopping-cart__item__count button:hover i {
+  color: #000;
+}
+#cart .cart-wrapper .cart-left .shopping-cart__item__count input {
+  text-align: center;
+  border: none;
+  outline: none;
+  width: 32px;
+  height: 33.4px;
+  font: normal 400 15px/35px "Jost", sans-serif;
+}
+#cart .cart-wrapper .cart-left .cart-left-footer input {
+  width: 280px;
+  height: 42px;
+  padding: 8px 15px !important;
+  border: 1px solid rgba(143, 143, 143, 0.6);
+}
+#cart .cart-wrapper .cart-left .cart-left-footer button {
+  width: 124.23px;
+  height: 42px;
+  border: 1px solid rgb(221, 221, 221);
+  outline: none;
+  background-color: rgb(240, 240, 240);
+  font: normal 500 15px/22.5px "Jost", sans-serif;
+}
+#cart .cart-wrapper .cart-left .cart-left-footer button:hover {
+  cursor: pointer;
+  background-color: #8F8F8F;
+  color: #fff;
+}
+#cart .cart-wrapper .cart-left .update-cart {
+  width: 107.75px !important;
+  height: 42px;
+  padding: 8px 15px !important;
+  font: normal;
+  background-color: rgb(238, 64, 61) !important;
+  color: #fff !important;
+}
+#cart .cart-wrapper .cart-right {
+  width: 350px;
+  height: 436.33px;
+  padding: 30px !important;
+  border: 1px solid rgb(222, 224, 234);
+}
+#cart .cart-wrapper .cart-right h2 {
+  font: normal 400 16px/19.2px "Jost", sans-serif;
+  padding-bottom: 15px !important;
+  margin-bottom: 30px !important;
+  border-bottom: 1px solid rgb(222, 224, 234);
+}
+#cart .cart-wrapper .cart-right table {
+  width: 288.4px;
+}
+#cart .cart-wrapper .cart-right table tr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: normal 400 14px/21px "Jost", sans-serif;
+  margin-bottom: 8px !important;
+  border-bottom: 1px solid rgb(222, 224, 234);
+}
+#cart .cart-wrapper .cart-right table tr:nth-child(3) {
+  border: none;
+}
+#cart .cart-wrapper .cart-right table th {
+  padding: 8px 8px 10px 8px !important;
+  font: normal 400 14px/21px "Jost", sans-serif;
+}
+#cart .cart-wrapper .cart-right table td {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  padding: 4px 4px 10px 4px !important;
+}
+#cart .cart-wrapper .cart-right table td ul {
+  padding: 10px 4px 0 4px !important;
+  font: normal 400 13px/19.5px "Jost", sans-serif;
+}
+#cart .cart-wrapper .cart-right table td ul li {
+  margin-bottom: 10px !important;
+}
+#cart .cart-wrapper .cart-right table td .shipping-destination {
+  font: normal 400 13px/19.5px "Jost", sans-serif;
+  margin-bottom: 12px !important;
+}
+#cart .cart-wrapper .cart-right table td a {
+  text-decoration: none;
+  color: #EE403D;
+}
+#cart .cart-wrapper .cart-right table td a:hover {
+  color: #0a58ca;
+}
+#cart .cart-wrapper .cart-right table td .total-price {
+  font: normal 600 20px/30px "Jost", sans-serif;
+  letter-spacing: -0.03px;
+}
+#cart .cart-wrapper .cart-right .checkout-btn {
+  width: 100%;
+  height: 48px;
+  display: grid;
+  place-content: center;
+  background-color: #EE403D;
+  color: #fff;
+  text-decoration: none;
+  font: normal 500 15px/22.5px "Jost", sans-serif;
+  margin-top: 25px !important;
 }/*# sourceMappingURL=index.css.map */

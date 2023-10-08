@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+$custom-text-border: 1px solid rgba(26, 72, 69, 0.15);
+$custom-font-family: 'Jost',
+sans-serif;
+$custom-red-color: #EE403D;
+$custom-blue-color:#41cde2;
+$custom-text-color:rgb(134, 134, 134);
+
+.container {
+    max-width: 1260.2px;
+    margin: 0 auto !important;
+}
+
+#cart{
+    margin-top: 60px !important;
+    margin-bottom: 80px !important;
+    .cart-wrapper{
+        .cart-left{
+            width: 844.2px;
+
+            .free-shipping{
+                height: 77.1px;
+                padding: 20px !important;
+                border: 1px solid rgb(222, 224, 234);
+
+                .free-shipping-notice{
+                    font: normal 400 13px/19.5px $custom-font-family;
+                    padding-bottom: 10px !important;
+
+                    span{
+                        color: rgb(238, 64, 61);
+                        font-weight: 700;
+                    }
+                }
+
+                .progress-bar{
+                    height: 6px;
+                    border-radius: 10px;
+                    background-color: rgb(242, 243, 245);
+
+                    span{
+                        width: 24%;
+                        background-color: rgb(238, 64, 61);
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+            table{
+                border: 0.8px solid #ddd;
+                border-inline: none;
+                border-top: none;
+            }
+
+            th{
+                font: normal 500 14px/21px $custom-font-family;
+                color: rgb(33, 37, 41);
+                opacity: 0.3;
+                text-align: center;
+            }
+
+            td{
+                padding: 12px 15px !important;
+                height: 80px;
+            }
+
+            .center-item{
+                height: 100% !important;
+                display: flex !important;
+                align-items: center !important;
+            }
+
+            .cart-item{
+                width: 450px;
+            }
+
+            .cart-thumbnail{
+                position: relative;
+
+                img{
+                    width: 60px;
+                    height: 90px;
+                }
+            }
+
+            .cart-deleteBtn{
+                width: 18px;
+                height: 18px;
+                position: absolute;
+                top: -6px;
+                left: -10px;
+                font-size: 12px;
+                display: grid;
+                place-content: center;
+                border-radius: 50%;
+                background-color: #EE403D;
+                color: #fff;
+                cursor: pointer;
+            }
+
+            .shopping-cart{
+                &__item{
+                    &__count {
+                        width: max-content;
+                        height: max-content;
+                        border: 1px solid rgba(33, 37, 41,0.2);
+        
+                        button {
+                            width: 25px;
+                            height: 33.4px;
+                            border: none;
+                            background-color: white;
+        
+                            i {
+                                font-size: 13px;
+                                color: rgb(175, 169, 169);
+                            }
+        
+                            &:hover {
+                                cursor: pointer;
+        
+                                i {
+                                    color: #000;
+                                }
+                            }
+                        }
+        
+                        input {
+                            text-align: center;
+                            border: none;
+                            outline: none;
+                            width: 32px;
+                            height: 33.4px;
+                            font: normal 400 15px/35px $custom-font-family;
+                        }
+                    }
+                }   
+            }
+
+            .cart-left-footer{
+                input{
+                    width: 280px;
+                    height: 42px;
+                    padding: 8px 15px !important;
+                    border: 1px solid rgba(143, 143, 143,0.6);
+                }
+                button{
+                    width: 124.23px;
+                    height: 42px;
+                    border: 1px solid rgb(221, 221, 221);
+                    outline: none;
+                    background-color: rgb(240, 240, 240);
+                    font: normal 500 15px/22.5px $custom-font-family;
+
+                    &:hover{
+                        cursor: pointer;
+                        background-color: #8F8F8F;
+                        color: #fff;
+                    }
+                }
+            }
+
+            .update-cart{
+                width: 107.75px !important;
+                height: 42px;
+                padding: 8px 15px !important;
+                font: normal;
+                background-color: rgb(238, 64, 61) !important;
+                color: #fff !important;
+            }
+            
+        }
+        .cart-right{
+            width: 350px;
+            height: 436.33px;
+            padding: 30px !important;
+            border: 1px solid rgb(222, 224, 234);
+
+            h2{
+                font: normal 400 16px/19.2px $custom-font-family;
+                padding-bottom: 15px !important;
+                margin-bottom: 30px !important;
+                border-bottom: 1px solid rgb(222, 224, 234);
+            }
+
+            table{
+                width: 288.4px;
+
+                tr{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    font: normal 400 14px/21px $custom-font-family;
+                    margin-bottom: 8px !important;
+                    border-bottom: 1px solid rgb(222, 224, 234);
+
+                    &:nth-child(3){
+                        border: none;
+                    }
+                }
+
+                th{
+                    padding: 8px 8px 10px 8px !important;
+                    font: normal 400 14px/21px $custom-font-family;
+                }
+
+                td{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: end;
+                    padding: 4px 4px 10px 4px !important;
+
+                    ul{
+                        padding: 10px 4px 0 4px !important;
+                        font: normal 400 13px/19.5px $custom-font-family;
+
+                        li{
+                            margin-bottom: 10px !important;
+                        }
+                    }
+                    .shipping-destination{
+                        font: normal 400 13px/19.5px $custom-font-family;
+                        margin-bottom: 12px !important;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: #EE403D;
+
+                        &:hover{
+                            color: #0a58ca;
+                        }
+                    }
+                    .total-price{
+                        font: normal 600 20px/30px $custom-font-family;
+                        letter-spacing: -0.03px;
+                    }
+                }
+            }
+            .checkout-btn{
+                width: 100%;
+                height: 48px;
+                display: grid;
+                place-content: center;
+                background-color: #EE403D;
+                color: #fff;
+                text-decoration: none;
+                font: normal 500 15px/22.5px $custom-font-family;
+                margin-top: 25px !important;
+            }
+        }
+    }
+}
