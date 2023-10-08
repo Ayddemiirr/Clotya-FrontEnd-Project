@@ -4190,4 +4190,35 @@ footer .footer-wrapper .footer-bottom ul li a {
   #collection .collection-wrapper .slick-arrow {
     display: none !important;
   }
+  #featured .featured-wrapper {
+    width: 932px !important;
+  }
+  #featured .featured-wrapper .slick-arrow {
+    display: none !important;
+  }
+  #new-collection .new-collection-wrapper {
+    flex-direction: column;
+  }
+  #new-collection .new-collection-wrapper .new-collection-left {
+    align-items: start;
+    margin-bottom: 40px !important;
+  }
+  #new-collection .new-collection-wrapper .new-collection-right-image {
+    margin-top: 30px !important;
+  }
+  #brand .brand-wrapper .brand-item:nth-child(1) {
+    display: none;
+  }
+  #brand .brand-wrapper .brand-item:nth-child(2) {
+    display: none;
+  }
+  .last-collection-wrapper {
+    flex-direction: column;
+  }
+  .last-collection-wrapper .last-collection-right {
+    width: 100% !important;
+  }
+  .featured-product-wrapper .slick-arrow {
+    display: none !important;
+  }
 }/*# sourceMappingURL=index.css.map */
