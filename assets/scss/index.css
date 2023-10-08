@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0 !important;
   padding: 0 !important;
@@ -1272,6 +1273,66 @@ footer .footer-wrapper .footer-bottom ul li a {
   color: #000;
   font: normal 400 13px/19.5px "Jost", sans-serif;
   letter-spacing: -0.03px;
+}
+
+.nav-modal {
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.nav-modal__content {
+  background-color: #fefefe;
+  padding: 22px !important;
+  border: 1px solid #888;
+  width: 21%;
+  overflow-y: auto;
+  position: relative;
+}
+.nav-modal .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+}
+.nav-modal .close:hover, .nav-modal .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.nav-modal__logo {
+  margin-bottom: 34px !important;
+}
+.nav-modal__logo img {
+  width: 112px;
+  height: 25px;
+}
+.nav-modal__menu h4 {
+  font: normal 600 14px/21px "Jost", sans-serif;
+}
+.nav-modal--li {
+  width: 100%;
+}
+.nav-modal--li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  text-transform: capitalize;
+  font: normal 400 16px/24px "Jost", sans-serif;
+  padding: 8px 0px !important;
+}
+.nav-modal--li a i {
+  font-size: 12px;
 }
 
 * {
@@ -2845,4 +2906,1050 @@ footer .footer-wrapper .footer-bottom ul li a {
   text-decoration: none;
   font: normal 500 15px/22.5px "Jost", sans-serif;
   margin-top: 25px !important;
+}
+
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.container {
+  max-width: 1260.2px;
+  margin: 0 auto !important;
+}
+
+#breadcrumb {
+  padding: 16px !important;
+}
+#breadcrumb ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+}
+#breadcrumb ul li {
+  font: normal 400 13px/22px "Jost", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#breadcrumb ul li span {
+  opacity: 0.3;
+}
+#breadcrumb ul li a {
+  text-decoration: none;
+  color: rgb(33, 37, 41);
+  opacity: 0.3;
+}
+#breadcrumb ul li a:hover {
+  color: #000;
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+#product-detail {
+  margin-bottom: 40px !important;
+}
+#product-detail .product-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#product-detail .product-wrapper .product-item__image-thumbnails {
+  width: 493.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-right: 40px !important;
+}
+#product-detail .product-wrapper .product-item__images {
+  display: flex;
+  gap: 12px;
+}
+#product-detail .product-wrapper .product-item__image {
+  width: 74px;
+  height: 82px;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+#product-detail .product-wrapper .product-item__image.active {
+  border: 1px solid #000;
+}
+#product-detail .product-wrapper .product-item__image:hover {
+  border: 1px solid #000;
+}
+#product-detail .product-wrapper .product-item__image:hover img {
+  scale: 0.8;
+  transition: all 0.6s;
+}
+#product-detail .product-wrapper .product-item__image img {
+  width: 70px;
+  height: 80px;
+  transition: all 0.6s;
+}
+#product-detail .product-wrapper .product-item__main-image-content {
+  width: 493.5px;
+  height: 740.41px;
+  position: relative;
+}
+#product-detail .product-wrapper .product-item__main-image-content img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+#product-detail .product-wrapper .product-item__main-image-content--addition {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  gap: 10px;
+  top: 10px;
+  right: 15px;
+}
+#product-detail .product-wrapper .product-item__main-image-item {
+  position: absolute;
+  display: none;
+}
+#product-detail .product-wrapper .product-item__main-image-item.active {
+  display: block;
+}
+#product-detail .product-wrapper .product-item__info {
+  width: 436.5px;
+}
+#product-detail .product-wrapper .product-item__title {
+  margin-bottom: 8px !important;
+}
+#product-detail .product-wrapper .product-item__title h2 {
+  font: normal 400 28px/33.6px "Jost", sans-serif;
+}
+#product-detail .product-wrapper .product-item--review {
+  margin-bottom: 24px !important;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+#product-detail .product-wrapper .product-item--review-star {
+  color: rgb(182, 173, 173);
+  font: normal 200 11px/16px "Jost", sans-serif;
+}
+#product-detail .product-wrapper .product-item--review-count {
+  margin-left: 6px !important;
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+}
+#product-detail .product-wrapper .product-item__price {
+  margin-bottom: 18px !important;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+#product-detail .product-wrapper .product-item--old-price {
+  font: normal 400 18px/14.85px "Jost", sans-serif;
+  -webkit-text-decoration: line-through rgba(0, 0, 0, 0.6);
+          text-decoration: line-through rgba(0, 0, 0, 0.6);
+  opacity: 0.5;
+}
+#product-detail .product-wrapper .product-item--new-price {
+  font: normal 500 20.5px/16px "Jost", sans-serif;
+  color: black;
+}
+#product-detail .product-wrapper .product-item__des {
+  font: normal 400 14px/21px "Jost", sans-serif;
+  letter-spacing: -0.03px;
+  margin-bottom: 15px !important;
+}
+#product-detail .product-wrapper .product-item__size {
+  margin-bottom: 30px !important;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+#product-detail .product-wrapper .product-item__size__title {
+  margin-right: 6px !important;
+  font: normal 400 14px/21px "Jost", sans-serif;
+}
+#product-detail .product-wrapper .product-item__size__value {
+  margin-right: 9px !important;
+  font: normal 500 13px/18px "Jost", sans-serif;
+}
+#product-detail .product-wrapper .product-item__size__content {
+  margin-top: 10px !important;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+#product-detail .product-wrapper .product-item__size__box {
+  width: 79.3px;
+  height: 34.6px;
+  border: 1px solid rgba(26, 72, 69, 0.2);
+  display: grid;
+  place-content: center;
+}
+#product-detail .product-wrapper .product-item__size__box.active-size {
+  border-color: #EE403D;
+  background-color: #EE403D;
+  color: #fff;
+}
+#product-detail .product-wrapper .product-item__size__box:hover {
+  cursor: pointer;
+}
+#product-detail .product-wrapper .product-item__stock {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 25px !important;
+  padding: 0 15px !important;
+  background-color: rgb(231, 251, 239);
+  color: rgb(71, 180, 134);
+  width: 82.35px;
+  height: 34px;
+  opacity: 0.6;
+}
+#product-detail .product-wrapper .product-item__stock span {
+  font: normal 600 14px/21px "Jost", sans-serif;
+}
+#product-detail .product-wrapper .product-item__add-to-card {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  display: flex;
+  justify-content: space-between;
+}
+#product-detail .product-wrapper .product-item__add-to-card__btn {
+  width: 318.4px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  border-radius: 2px;
+}
+#product-detail .product-wrapper .product-item__add-to-card__btn:hover {
+  opacity: 0.5;
+  color: #fff;
+  cursor: pointer;
+}
+#product-detail .product-wrapper .product-item__count {
+  border: 1px solid rgba(26, 72, 69, 0.2);
+}
+#product-detail .product-wrapper .product-item__count button {
+  width: 32px;
+  height: 46.4px;
+  border: none;
+  background-color: white;
+}
+#product-detail .product-wrapper .product-item__count button i {
+  font-size: 14px;
+  color: rgb(213, 213, 213);
+}
+#product-detail .product-wrapper .product-item__count button:hover {
+  cursor: pointer;
+}
+#product-detail .product-wrapper .product-item__count button:hover i {
+  color: #000;
+}
+#product-detail .product-wrapper .product-item__count input {
+  text-align: center;
+  border: none;
+  outline: none;
+  width: 32px;
+  height: 46px;
+  font: normal 500 18px/30.6px "Jost", sans-serif;
+}
+#product-detail .product-wrapper .product-item__ask-share {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid rgba(26, 72, 69, 0.2);
+  padding-bottom: 24px !important;
+  margin-bottom: 24px !important;
+}
+#product-detail .product-wrapper .product-item__ask-share button {
+  margin: 10px 20px 0 0 !important;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  position: relative;
+}
+#product-detail .product-wrapper .product-item__ask-share button::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background: #41cde2;
+  bottom: -2px;
+  left: 0;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+#product-detail .product-wrapper .product-item__ask-share button:hover {
+  cursor: pointer;
+}
+#product-detail .product-wrapper .product-item__ask-share button:hover:after {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+#product-detail .product-wrapper .product-item__ask-share button:hover i {
+  color: #41CDE2;
+}
+#product-detail .product-wrapper .product-item__ask-share button:hover span {
+  color: #41CDE2;
+}
+#product-detail .product-wrapper .product-item__ask-share button i {
+  font-size: 17px;
+  opacity: 0.8;
+}
+#product-detail .product-wrapper .product-item__ask-share button span {
+  font: normal 400 14px/21px "Jost", sans-serif;
+}
+#product-detail .product-wrapper .product-item__meta p {
+  font: normal 400 14px/21px "Jost", sans-serif;
+  color: #b2b2bb;
+}
+#product-detail .product-wrapper .product-item__meta p span {
+  color: #000;
+}
+#product-detail .product-wrapper .product-item__meta div {
+  display: flex;
+  align-items: center;
+}
+#product-detail .product-wrapper .product-item__meta div p {
+  margin-right: 7px !important;
+}
+#product-detail .product-wrapper .product-item__meta div a {
+  text-decoration: none;
+  color: #000;
+  font: normal 600 12px/18px "Jost", sans-serif;
+}
+#product-detail .product-wrapper .product-item__meta div a:hover {
+  color: #EE403D;
+}
+#product-detail .product-wrapper .product-item__meta div span {
+  margin-inline: 4px !important;
+}
+#product-detail .product-wrapper .recent-views {
+  width: 220px;
+}
+#product-detail .product-wrapper .recent-views h2 {
+  font: normal 500 16px/19.2px "Jost", sans-serif;
+  margin-bottom: 30px !important;
+}
+#product-detail .product-wrapper .recent-views .recent-views-wrapper .recent-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 30px !important;
+}
+#product-detail .product-wrapper .recent-views .recent-views-wrapper .recent-item__thumbnails {
+  width: 50px;
+  height: 75px;
+}
+#product-detail .product-wrapper .recent-views .recent-views-wrapper .recent-item__thumbnails a img {
+  width: 100%;
+  height: 100%;
+}
+#product-detail .product-wrapper .recent-views .recent-views-wrapper .recent-item__info {
+  width: 155px;
+  height: 55px;
+}
+#product-detail .product-wrapper .recent-views .recent-views-wrapper .recent-item__title {
+  font: normal 400 14px/16.8px "Jost", sans-serif;
+  text-decoration: none;
+  color: #000;
+}
+#product-detail .product-wrapper .recent-views .recent-views-wrapper .recent-item__title a {
+  text-decoration: none;
+  color: #000;
+}
+#product-detail .product-wrapper .recent-views .recent-views-wrapper .recent-item__price {
+  height: 40px;
+  display: flex;
+  font: normal 500 13px/19.5px "Jost", sans-serif;
+  margin-bottom: 15px !important;
+  align-items: center;
+  gap: 8px;
+}
+#product-detail .product-item-down {
+  margin: 80px 0 20px !important;
+}
+#product-detail .product-item-down .product-tab-list__ul {
+  margin-bottom: 35px !important;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: start;
+  position: relative;
+}
+#product-detail .product-item-down .product-tab-list__ul:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  height: 1px;
+  background-color: #e8e8e8;
+}
+#product-detail .product-item-down .product-tab-list__li {
+  position: relative;
+}
+#product-detail .product-item-down .product-tab-list__li span {
+  font: normal 500 20px/30px "Jost", sans-serif;
+  color: #b2b2bb;
+}
+#product-detail .product-item-down .product-tab-list__li:hover {
+  cursor: pointer;
+}
+#product-detail .product-item-down .product-tab-list__li.active-selected span {
+  color: #000;
+}
+#product-detail .product-item-down .product-tab-list__li.active-selected::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  bottom: -10px;
+}
+#product-detail .product-item-down .product-tab-list__content {
+  display: none;
+}
+#product-detail .product-item-down .product-tab-list__content > * {
+  width: 1170px;
+  animation: fadeDown 0.6s ease-in-out;
+}
+#product-detail .product-item-down .product-tab-list__content.active-content {
+  display: flex;
+}
+#product-detail .product-item-down .product-tab-list__content .description p {
+  margin-bottom: 20px !important;
+  font: normal 400 15px/30px "Jost", sans-serif;
+  color: rgb(33, 37, 41);
+}
+#product-detail .product-item-down .product-tab-list__content .description__row {
+  display: flex;
+  gap: 30px;
+}
+#product-detail .product-item-down .product-tab-list__content .description__col {
+  font: normal 400 15px/30px "Jost", sans-serif;
+  color: rgb(33, 37, 41);
+}
+#product-detail .product-item-down .product-tab-list__content .description__col.active-col {
+  margin-right: 80px !important;
+}
+#product-detail .product-item-down .product-tab-list__content .description__col h6 {
+  font: normal 600 16px/19.2px "Jost", sans-serif;
+  color: #000;
+  margin-top: 16px !important;
+  margin-bottom: 8px !important;
+}
+#product-detail .product-item-down .product-tab-list__content .review h2 {
+  margin-bottom: 12px !important;
+  font: normal 300 30px/36px "Jost", sans-serif;
+}
+#product-detail .product-item-down .product-tab-list__content .review__write {
+  margin-bottom: 30px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#product-detail .product-item-down .product-tab-list__content .review__point {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#product-detail .product-item-down .product-tab-list__content .review__point span i {
+  font-size: 13.5px;
+  font-weight: 300px;
+  color: rgb(182, 173, 173);
+}
+#product-detail .product-item-down .product-tab-list__content .review__point--text {
+  margin-top: 3px !important;
+  margin-left: 5px !important;
+  color: rgb(33, 37, 41);
+  font: normal 400 15px/20px "Jost", sans-serif;
+}
+#product-detail .product-item-down .product-tab-list__content .review--btn button {
+  width: 223.73px;
+  height: 44.6px;
+  text-align: center;
+  font: normal 500 12px/43px "Jost", sans-serif;
+  border: 1px solid #000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #fff;
+  position: relative;
+}
+#product-detail .product-item-down .product-tab-list__content .review--btn button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  content: "";
+  transition: all 0.45s ease;
+  background-color: #41cde2;
+}
+#product-detail .product-item-down .product-tab-list__content .review--btn button span {
+  position: inherit;
+  z-index: 10;
+}
+#product-detail .product-item-down .product-tab-list__content .review--btn button:hover {
+  cursor: pointer;
+  color: #fff;
+  border: #41CDE2;
+}
+#product-detail .product-item-down .product-tab-list__content .review--btn button:hover:before {
+  width: 100%;
+  transition: all 0.45s ease;
+}
+#product-detail .product-item-down .product-tab-list__content .review__comment {
+  padding: 30px 40px !important;
+  margin: 0 0 15px !important;
+  position: relative;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+#product-detail .product-item-down .product-tab-list__content .review__comment--raiting {
+  display: flex;
+  flex-direction: column;
+}
+#product-detail .product-item-down .product-tab-list__content .review__comment--raiting__content {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+#product-detail .product-item-down .product-tab-list__content .review__comment--raiting--star i {
+  font-size: 11px;
+  font-weight: 300px;
+  color: rgb(182, 173, 173);
+  margin-right: 5px !important;
+  min-height: unset;
+  min-width: unset;
+  cursor: pointer;
+}
+#product-detail .product-item-down .product-tab-list__content .review__comment--raiting__writer {
+  font: normal 400 13px/22.1px "Jost", sans-serif;
+  color: #aeaeae;
+  margin-left: 4px !important;
+  margin-top: 4px !important;
+}
+#product-detail .product-item-down .product-tab-list__content .review__comment--raiting__title {
+  margin: 7px 0 10px 0 !important;
+  font: normal 500 18px/21px "Jost", sans-serif;
+}
+#product-detail .product-item-down .product-tab-list__content .review__comment--raiting__description {
+  font: normal 400 15px/20px "Jost", sans-serif;
+  color: rgb(33, 37, 41);
+}
+#product-detail .product-item-down .product-tab-list__content .review__comment--report {
+  font: normal 400 13px/16px "Jost", sans-serif;
+  color: rgb(174, 174, 174);
+  text-decoration: underline;
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+#product-detail .product-item-down .product-tab-list__content .review__comment--report:hover {
+  color: #41CDE2;
+  cursor: pointer;
+}
+#product-detail .product-item-down .product-tab-list__content .review__write-content {
+  margin: 50px 0 !important;
+  padding: 50px 0 !important;
+  border-top: 1px solid #ECECEC;
+  flex-direction: column;
+  display: none;
+}
+#product-detail .product-item-down .product-tab-list__content .review__write-content.active {
+  display: flex;
+}
+#product-detail .product-item-down .product-tab-list__content .review__write-content h3 {
+  font: normal 300 25px/24px "Jost", sans-serif;
+  margin-bottom: 25px !important;
+}
+#product-detail .product-item-down .product-tab-list__content .review__write-content__form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#product-detail .product-item-down .product-tab-list__content .review__write-content__form-group__item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px !important;
+}
+#product-detail .product-item-down .product-tab-list__content .review__write-content__form-group__item label {
+  font: normal 400 15px/20px "Jost", sans-serif;
+}
+#product-detail .product-item-down .product-tab-list__content .review__write-content__form-group__item input {
+  width: 570px;
+  height: 60px;
+  padding: 14px 20px !important;
+  font: normal 400 15px/25.5px "Jost", sans-serif;
+  border: 1px solid rgba(26, 72, 69, 0.2);
+  outline: none;
+}
+#product-detail .product-item-down .product-tab-list__content .review__write-content__form-group__item input::-moz-placeholder {
+  color: #aaa;
+}
+#product-detail .product-item-down .product-tab-list__content .review__write-content__form-group__item input::placeholder {
+  color: #aaa;
+}
+#product-detail .product-item-down .product-tab-list__content .review__write-content__choose-raiting {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0 18px !important;
+}
+#product-detail .product-item-down .product-tab-list__content .review__write-content__choose-raiting__title {
+  margin-right: 5px !important;
+  font: normal 400 15px/20px "Jost", sans-serif;
+}
+#product-detail .product-item-down .product-tab-list__content .review__write-content__choose-raiting span:hover {
+  cursor: pointer;
+}
+#product-detail .product-item-down .product-tab-list__content .review__write-content__choose-raiting span i {
+  font-size: 13px;
+  color: rgb(225, 225, 225);
+}
+#product-detail .product-item-down .product-tab-list__content .review__write-content__title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px !important;
+}
+#product-detail .product-item-down .product-tab-list__content .review__write-content__title label {
+  margin-bottom: 8px;
+  font: normal 400 15px/20px "Jost", sans-serif;
+}
+#product-detail .product-item-down .product-tab-list__content .review__write-content__title input {
+  font: normal 400 15px/25.5px "Jost", sans-serif;
+  padding: 14px 20px !important;
+  height: 60px;
+  border: 1px solid rgba(26, 72, 69, 0.2);
+  outline: none;
+}
+#product-detail .product-item-down .product-tab-list__content .review__write-content__title input::-moz-placeholder {
+  color: #aaa;
+}
+#product-detail .product-item-down .product-tab-list__content .review__write-content__title input::placeholder {
+  color: #aaa;
+}
+#product-detail .product-item-down .product-tab-list__content .review__write-content__description {
+  margin-bottom: 20px !important;
+  display: flex;
+  flex-direction: column;
+}
+#product-detail .product-item-down .product-tab-list__content .review__write-content__description label {
+  margin-bottom: 8px !important;
+  font: normal 400 15px/20px "Jost", sans-serif;
+}
+#product-detail .product-item-down .product-tab-list__content .review__write-content__description textarea {
+  font: normal 400 15px/25.5px "Jost", sans-serif;
+  padding: 14px 20px !important;
+  border: 1px solid rgba(26, 72, 69, 0.2);
+  outline: none;
+}
+#product-detail .product-item-down .product-tab-list__content .review__write-content__description textarea::-moz-placeholder {
+  color: #aaa;
+}
+#product-detail .product-item-down .product-tab-list__content .review__write-content__description textarea::placeholder {
+  color: #aaa;
+}
+#product-detail .product-item-down .product-tab-list__content .review__write-content--btn {
+  align-self: center;
+}
+#product-detail .product-item-down .product-tab-list__content .review__write-content--btn button {
+  width: 209px;
+  height: 60px;
+  text-align: center;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  font: normal 500 12px/18px "Jost", sans-serif;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+#product-detail .product-item-down .product-tab-list__content .review__write-content--btn button:hover {
+  background-color: #EE403D;
+  color: #fff;
+  border: 1px solid rgba(26, 72, 69, 0.2);
+  cursor: pointer;
+}
+#product-detail .product-item-down .product-tab-list__content .shipping .information {
+  display: flex;
+}
+#product-detail .product-item-down .product-tab-list__content .shipping h2 {
+  font: normal 400 20px/24px "Jost", sans-serif;
+  margin-bottom: 12px !important;
+}
+#product-detail .product-item-down .product-tab-list__content .shipping p {
+  margin-bottom: 20px !important;
+  font: normal 700 16px/24px "Jost", sans-serif;
+  color: rgb(33, 37, 41);
+  width: 265px;
+  padding: 8px !important;
+  height: 40.8px;
+  border: 1px solid rgba(26, 72, 69, 0.2);
+  display: flex;
+  align-items: center;
+}
+#product-detail .product-item-down .product-tab-list__content .shipping p:nth-last-child(1) {
+  font: normal 400 16px/24px "Jost", sans-serif;
+}
+
+#related-products {
+  margin-bottom: 90px !important;
+}
+#related-products h2 {
+  font: normal 500 20px/30px "Jost", sans-serif;
+  margin-bottom: 30px !important;
+  padding-bottom: 15px !important;
+  border-bottom: 1px solid rgba(26, 72, 69, 0.2);
+}
+#related-products .related-products-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#related-products .related-products-wrapper .product-card {
+  display: flex;
+  flex-direction: column;
+  width: 292.5px !important;
+}
+#related-products .related-products-wrapper .product-card:hover .product-card-thumbnail .product-link {
+  display: flex;
+}
+#related-products .related-products-wrapper .product-card .product-card-thumbnail {
+  position: relative;
+  width: 100%;
+  height: 438.75px;
+  margin-bottom: 16px !important;
+}
+#related-products .related-products-wrapper .product-card .product-card-thumbnail .product-link {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 2;
+  top: 15px;
+  right: -7px;
+  transform: translate(-50%);
+}
+#related-products .related-products-wrapper .product-card .product-card-thumbnail .product-link--hover-text {
+  width: 82.25px;
+  height: 23px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  border-radius: 2px;
+  top: -32px;
+  font: normal 400 12px/23px "Jost", sans-serif;
+  display: none;
+}
+#related-products .related-products-wrapper .product-card .product-card-thumbnail .product-card-page-link {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+  animation: fadeDown 0.6s forwards;
+}
+#related-products .related-products-wrapper .product-card .product-card-thumbnail .product-card-page-link:hover {
+  background-color: #EE403D;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+#related-products .related-products-wrapper .product-card .product-card-thumbnail .product-card-page-link:hover i {
+  animation: none;
+  color: white;
+}
+#related-products .related-products-wrapper .product-card .product-card-thumbnail .product-card-page-link:hover span {
+  animation: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#related-products .related-products-wrapper .product-card .product-card-thumbnail .product-card-page-link:hover span i {
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #000;
+  font-size: 14px;
+}
+#related-products .related-products-wrapper .product-card .product-card-thumbnail .add-to-card i {
+  font-size: 14px;
+  color: rgb(30, 30, 30);
+}
+#related-products .related-products-wrapper .product-card .product-card-thumbnail .compare i {
+  font-size: 14px;
+  color: rgb(46, 45, 45);
+}
+#related-products .related-products-wrapper .product-card .product-card-thumbnail .hover-image img {
+  display: none;
+}
+#related-products .related-products-wrapper .product-card .product-card-thumbnail:hover .hover-image img {
+  display: inline;
+}
+#related-products .related-products-wrapper .product-card .product-card-thumbnail .product-image {
+  position: absolute;
+}
+#related-products .related-products-wrapper .product-card .product-card-thumbnail .product-image img {
+  width: 100%;
+  height: 100%;
+}
+#related-products .related-products-wrapper .product-card .product-card-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#related-products .related-products-wrapper .product-card .product-card-text .product-card-review {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px !important;
+}
+#related-products .related-products-wrapper .product-card .product-card-text .product-card-review i {
+  font-size: 13px;
+  line-height: 19.5px;
+  color: rgb(249, 195, 0) !important;
+}
+#related-products .related-products-wrapper .product-card .product-card-text .product-card-review span {
+  margin-top: 1.5px !important;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -0.03;
+  line-height: 19.5px;
+}
+#related-products .related-products-wrapper .product-card .product-card-text .product-card-title {
+  margin-bottom: 8px !important;
+}
+#related-products .related-products-wrapper .product-card .product-card-text .product-card-title a {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: none;
+  color: #000;
+}
+#related-products .related-products-wrapper .product-card .product-card-text .product-card-price {
+  display: flex;
+  gap: 8px;
+  letter-spacing: -0.03px;
+}
+#related-products .related-products-wrapper .product-card .product-card-text .product-card-price .old-price {
+  text-decoration: line-through;
+  opacity: 0.4;
+  font-size: 14.1px;
+  font-weight: 400;
+  line-height: 21.15px;
+}
+#related-products .related-products-wrapper .product-card .product-card-text .product-card-price .new-price {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22.5px;
+}
+
+.imageModal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.imageModal__content {
+  background-color: #fefefe;
+  margin: 4% auto !important;
+  padding: 30px 30px 20px 30px !important;
+  border: 1px solid #888;
+  width: 923px;
+  max-height: 85%;
+  overflow-y: auto;
+  position: relative;
+}
+.imageModal__content img {
+  width: 100%;
+}
+.imageModal .imageModal-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+.imageModal .imageModal-close:hover, .imageModal .imageModal-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.shareModal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.shareModal__content {
+  background-color: #fefefe;
+  margin: 12% auto !important;
+  padding: 30px 0 20px 30px !important;
+  border: 1px solid #888;
+  width: 24%;
+  max-height: 85%;
+  overflow-y: auto;
+  position: relative;
+}
+.shareModal__text {
+  font: normal 400 16px/27.2px "Jost", sans-serif;
+  color: #000;
+}
+.shareModal__copyBtn {
+  margin-top: 8px !important;
+  display: flex;
+}
+.shareModal__copyBtn input {
+  width: 220px;
+  height: 40px;
+  padding-inline: 10px !important;
+  font: normal 400 15px/25.5px "Jost", sans-serif;
+  outline: none;
+  border: 1px solid rgba(26, 72, 69, 0.2);
+}
+.shareModal__copyBtn button {
+  width: 80.35px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+}
+.shareModal__copyBtn button:hover {
+  background-color: #41CDE2;
+  border: #41CDE2;
+  cursor: pointer;
+}
+.shareModal__share {
+  margin-top: 30px !important;
+  display: flex;
+  flex-direction: column;
+}
+.shareModal__share label {
+  margin-bottom: 8px !important;
+  font: normal 500 16px/27.2px "Jost", sans-serif;
+}
+.shareModal__social-sharing {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 12px !important;
+}
+.shareModal__social-sharing a {
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid rgba(26, 72, 69, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shareModal__social-sharing a:hover {
+  background-color: #41CDE2;
+  border: #41CDE2;
+  color: #fff;
+}
+.shareModal__social-sharing a i {
+  font-size: 15px;
+}
+.shareModal .shareModal-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 7px;
+  right: 21px;
+}
+.shareModal .shareModal-close:hover, .shareModal .shareModal-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.size-modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.size-modal__content {
+  background-color: #fefefe;
+  margin: 5% auto !important;
+  padding: 30px !important;
+  padding-inline: 40px !important;
+  border: 1px solid #888;
+  width: 55%;
+  max-height: 80%;
+  overflow-y: auto;
+  position: relative;
+}
+.size-modal__content h2 {
+  padding-bottom: 0;
+  margin-bottom: 10px !important;
+  font: normal 500 24px/28.8px "Jost", sans-serif;
+}
+.size-modal__content p {
+  margin-bottom: 30px !important;
+}
+.size-modal__content th {
+  background-color: #000;
+  color: #fff;
+}
+.size-modal__content th, .size-modal__content td {
+  padding: 8px !important;
+  font-size: 14px;
+}
+.size-modal .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+}
+.size-modal .close:hover, .size-modal .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */
