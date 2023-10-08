@@ -21,8 +21,8 @@
                     NOW</a></span>
         </div>
         <div class="header-topbar">
-            <div class="header-topbar-wrapper row">
-                <div class="h-100 col-6 d-flex justify-content-between align-items-center">
+            <div class="header-topbar-wrapper row d-flex">
+                <div class="h-100 col-6 col-md-8 d-flex justify-content-between align-items-center">
                     <div class="social-buttons d-flex justify-content-between align-items-center">
                         <i class="fa-brands fa-instagram"></i>
                         <span>3.1M Followers</span>
@@ -63,7 +63,7 @@
                         <p>Free Shipping World wide for all orders over $199. <a href="#">Click and Shop Now.</a></p>
                     </div>
                 </div>
-                <div class="h-100 col-3 d-flex justify-content-end">
+                <div class="h-100 col-3 col-md-3 d-flex justify-content-end">
                     <ul type="none" class="header-topbar-right d-flex justify-content-between align-content-center">
                         <li class="sub-menu"><a href="#">Order Tracking</a></li>
                         <li class="sub-menu"><a href="#">English</a> <i class="fa-solid fa-angle-down"></i>
@@ -87,12 +87,12 @@
         </div>
         <div class="header-main">
             <div class="header-main-wrapper row d-flex justify-content-between ">
-                <div class="col-8 d-flex align-items-center">
-                    <nav class="h-100">
-                        <div style="cursor: pointer;" class="nav-menu">
+                <div class="col-8 col-md-9 d-flex align-items-center">
+                    <nav class="h-100 col-12">
+                        <div style="cursor: pointer;" class="nav-menu col-6">
                             <i class="fa-solid fa-bars"></i>
                         </div>
-                        <div class="nav-logo">
+                        <div class="nav-logo col-5 me-5">
                             <a href="./index.html">
                                 <img src="assets/images/logo.png" alt="log.png">
                             </a>
@@ -170,7 +170,7 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="header-main-right col-2 d-flex justify-content-end align-items-center">
+                <div class="header-main-right col-2 col-md-3 d-flex justify-content-end align-items-center">
                     <a href="./my-account.html" class="header-account"><i class="fa-regular fa-user"></i></a>
                     <div class="search-toggle"><img src="assets/images/search-interface-symbol.png"
                             alt="search-interface-symbol.png"></i></div>
@@ -182,6 +182,26 @@
                         <span class="header-cart-price">$0.00</span>
                         <img src="assets/images/shopping-bag.png" alt="shopping-bag.png">
                         <span class="header-cart-count">0</span>
+                        <div class="cart-hover">
+                            <div class="cart-wrapper">          
+                            </div>
+                            <div class="cart-footer row">
+                                <p class="col-6 subtotal">Subtotal:</p>
+                                <span class="col-6 total-price-basket">$141.23</span>
+                                <div style="font-size: 13px; color: black;" class="col-12 mt-1">You have <span style="font-size: 13px;" class="product-count">3</span> items in your cart</div>
+                                <div class="free-shipping col-12 mb-4">
+                                    <div class="free-shipping-notice">
+                                        Add <span>$205.03</span> to cart and get
+                                        free shipping!
+                                    </div>
+                                    <div class="progress-bar">
+                                        <span class="progress"></span>
+                                    </div>
+                                </div>
+                                <a style="text-decoration: none;" href="./cart.html" class="col-12 view-cart-btn cart-btn mb-2"><span>View Cart</span></a>
+                                <button class="col-12 checkout-cart-btn cart-btn mb-3"><span>Checkout</span></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -235,7 +255,7 @@
                         maecenas accumsan lacus vel facilisis.</p>
                 </div>
                 <div class="featured-products">
-                    <div class="product-card">
+                    <div class="product-card" data-id="1">
                         <div class="product-card-thumbnail">
                             <div class="main-image product-image">
                                 <a href="#"><img src="assets/images/product-image1.jpg" alt="product-image1.jpg"></a>
@@ -259,7 +279,7 @@
                             </div>
                         </div>
                         <div class="product-card-text">
-                            <div class="product-card-review">
+                            <div class="product-card-review" data-raiting="2">
                                 <i class="fa-solid fa-star" style="color: #f1e909;"></i>
                                 <span>2 review</span>
                             </div>
@@ -272,7 +292,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product-card">
+                    <div class="product-card" data-id="2">
                         <div class="product-card-thumbnail">
                             <div class="main-image product-image"><a href="#"><img
                                         src="assets/images/product-image3.jpeg" alt="product-image3.jpg"></a></div>
@@ -294,7 +314,7 @@
                             </div>
                         </div>
                         <div class="product-card-text">
-                            <div class="product-card-review">
+                            <div class="product-card-review" data-raiting="1">
                                 <i class="fa-solid fa-star" style="color: #f1e909;"></i>
                                 <span>1 review</span>
                             </div>
@@ -307,7 +327,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product-card">
+                    <div class="product-card" data-id="3">
                         <div class="product-card-thumbnail">
                             <div class="main-image product-image"><a href="#"><img
                                         src="assets/images/product-image5.jpeg" alt="product-image5.jpg"></a></div>
@@ -329,7 +349,7 @@
                             </div>
                         </div>
                         <div class="product-card-text">
-                            <div class="product-card-review">
+                            <div class="product-card-review" data-raiting="4">
                                 <i class="fa-solid fa-star" style="color: #f1e909;"></i>
                                 <span>4 review</span>
                             </div>
@@ -342,7 +362,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product-card">
+                    <div class="product-card" data-id="4">
                         <div class="product-card-thumbnail">
                             <div class="main-image product-image"><a href="#"><img
                                         src="assets/images/product-image7.jpg" alt="product-image7.jpg"></a></div>
@@ -363,7 +383,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="product-card-text">
+                        <div class="product-card-text" data-raiting="4">
                             <div class="product-card-review">
                                 <i class="fa-solid fa-star" style="color: #f1e909;"></i>
                                 <span>2 review</span>
@@ -377,7 +397,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product-card">
+                    <div class="product-card" data-id="5">
                         <div class="product-card-thumbnail">
                             <div class="main-image product-image"><a href="#"><img
                                         src="assets/images/product-image9.jpeg" alt="product-image9.jpeg"></a></div>
@@ -399,7 +419,7 @@
                             </div>
                         </div>
                         <div class="product-card-text">
-                            <div class="product-card-review">
+                            <div class="product-card-review" data-raiting="2">
                                 <i class="fa-solid fa-star" style="color: #f1e909;"></i>
                                 <span>2 review</span>
                             </div>
@@ -412,7 +432,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product-card">
+                    <div class="product-card" data-id="6">
                         <div class="product-card-thumbnail">
                             <div class="main-image product-image"><a href="#"><img
                                         src="assets/images/product-image11.jpg" alt="product-image11.jpg"></a></div>
@@ -434,7 +454,7 @@
                             </div>
                         </div>
                         <div class="product-card-text">
-                            <div class="product-card-review">
+                            <div class="product-card-review" data-raiting="2">
                                 <i class="fa-solid fa-star" style="color: #f1e909;"></i>
                                 <span>2 review</span>
                             </div>
@@ -549,7 +569,7 @@
                         maecenas accumsan lacus vel facilisis.</p>
                 </div>
                 <div class="featured-products-wrapper">
-                    <div class="featured-product">
+                    <div class="featured-product" data-id="1">
                         <div class="product-card-thumbnail">
                             <div class="main-image product-image">
                                 <a href="#"><img src="assets/images/product-image1.jpg" alt="product-image1.jpg"></a>
@@ -573,7 +593,7 @@
                             </div>
                         </div>
                         <div class="product-card-text">
-                            <div class="product-card-review">
+                            <div class="product-card-review" data-raiting="1">
                                 <i class="fa-solid fa-star" style="color: #f1e909;"></i>
                                 <span>2 review</span>
                             </div>
@@ -586,7 +606,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="featured-product">
+                    <div class="featured-product" data-id="2">
                         <div class="product-card-thumbnail">
                             <div class="main-image product-image"><a href="#"><img
                                         src="assets/images/product-image3.jpeg" alt="product-image3.jpg"></a></div>
@@ -608,7 +628,7 @@
                             </div>
                         </div>
                         <div class="product-card-text">
-                            <div class="product-card-review">
+                            <div class="product-card-review" data-raiting="2">
                                 <i class="fa-solid fa-star" style="color: #f1e909;"></i>
                                 <span>1 review</span>
                             </div>
@@ -621,7 +641,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="featured-product">
+                    <div class="featured-product" data-id="3">
                         <div class="product-card-thumbnail">
                             <div class="main-image product-image"><a href="#"><img
                                         src="assets/images/product-image5.jpeg" alt="product-image5.jpg"></a></div>
@@ -643,7 +663,7 @@
                             </div>
                         </div>
                         <div class="product-card-text">
-                            <div class="product-card-review">
+                            <div class="product-card-review" data-raiting="3">
                                 <i class="fa-solid fa-star" style="color: #f1e909;"></i>
                                 <span>4 review</span>
                             </div>
@@ -656,7 +676,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="featured-product">
+                    <div class="featured-product" data-id="4">
                         <div class="product-card-thumbnail">
                             <div class="main-image product-image"><a href="#"><img
                                         src="assets/images/product-image7.jpg" alt="product-image7.jpg"></a></div>
@@ -678,7 +698,7 @@
                             </div>
                         </div>
                         <div class="product-card-text">
-                            <div class="product-card-review">
+                            <div class="product-card-review" data-raiting="4">
                                 <i class="fa-solid fa-star" style="color: #f1e909;"></i>
                                 <span>2 review</span>
                             </div>
@@ -691,7 +711,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="featured-product">
+                    <div class="featured-product" data-id="5">
                         <div class="product-card-thumbnail">
                             <div class="main-image product-image"><a href="#"><img
                                         src="assets/images/product-image9.jpeg" alt="product-image9.jpeg"></a></div>
@@ -713,7 +733,7 @@
                             </div>
                         </div>
                         <div class="product-card-text">
-                            <div class="product-card-review">
+                            <div class="product-card-review" data-raiting="5">
                                 <i class="fa-solid fa-star" style="color: #f1e909;"></i>
                                 <span>2 review</span>
                             </div>
@@ -726,7 +746,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="featured-product">
+                    <div class="featured-product" data-id="6">
                         <div class="product-card-thumbnail">
                             <div class="main-image product-image"><a href="#"><img
                                         src="assets/images/product-image11.jpg" alt="product-image11.jpg"></a></div>
@@ -748,7 +768,7 @@
                             </div>
                         </div>
                         <div class="product-card-text">
-                            <div class="product-card-review">
+                            <div class="product-card-review" data-raiting="6">
                                 <i class="fa-solid fa-star" style="color: #f1e909;"></i>
                                 <span>2 review</span>
                             </div>
@@ -836,7 +856,7 @@
         </section>
     </main>
 
-    <section id="subscribe">
+    <!-- <section id="subscribe">
         <div class="container">
             <div class="subscribe-wrapper row d-flex justify-content-between">
                 <div class="subscribe-left col-5">
@@ -926,34 +946,39 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <div id="nav-modal" class="nav-modal">
         <div class="nav-modal__content">
             <span class="close">&times;</span>
-            <div class="nav-modal__logo">
-                <a href="./index.html"><img src="assets/images/logo.png" alt="logo.png"></a>
-            </div>
-            <div class="nav-modal__menu">
-                <h4>Main Menu</h4>
-                <ul type="none" class="navbar d-flex flex-column align-items-start mt-3">
-                    <li class="nav-modal--li"><a href="./index.html">
-                            Home <i class="fa-solid fa-angle-down"></i></a>
-                        <!-- <ul type="none">
-                            <li><a href="#">Home 1</a></li>
-                            <li><a href="#">Home 2</a></li>
-                            <li><a href="#">Home 3</a></li>
-                            <li><a href="#">Home 4</a></li>
-                            <li><a href="#">Home 5</a></li>
-                            <li><a href="#">Home 6</a></li>
-                        </ul> -->
-                    </li>
-                    <li class="nav-modal--li"><a href="./shop.html">
-                            Shop <i class="fa-solid fa-angle-down"></i></a>
-                        <!-- <ul type="none">
-                            <li>
-                                <a href="#">Shop Lists</a>
-                                <ul type="none">
+            <div class="row">
+                <div class="nav-modal__logo">
+                    <a href="./index.html"><img src="assets/images/logo.png" alt="logo.png"></a>
+                </div>
+                <div class="nav-modal__menu">
+                    <h4>Main Menu</h4>
+                    <ul type="none" class="nav-modal--ul navbar d-flex flex-column align-items-start mt-2">
+                        <li class="nav-modal--li home-li"><a href="./index.html">
+                                Home </a>
+                                <div class="nav-modal--li-btn home-li-btn">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                            <ul class="nav-modal--alt-ul home--alt-ul" type="none">
+                                <li><a href="#">Home 1</a></li>
+                                <li><a href="#">Home 2</a></li>
+                                <li><a href="#">Home 3</a></li>
+                                <li><a href="#">Home 4</a></li>
+                                <li><a href="#">Home 5</a></li>
+                                <li><a href="#">Home 6</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-modal--li shop-ul">
+                            <a href="./shop.html">
+                                Shop </a>
+                                <div class="nav-modal--li-btn shop-li-btn">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                                <ul class="nav-modal--alt-ul shop--alt-ul" type="none">
                                     <li><a href="#">Shop Default</a></li>
                                     <li><a href="#">Shop Right Sidebar</a></li>
                                     <li><a href="#">Shop Wide</a></li>
@@ -962,51 +987,63 @@
                                     <li><a href="#">Load More Button</a></li>
                                     <li><a href="#">Infinite Scrolling</a></li>
                                 </ul>
-                            </li>
-                            <li>
-                                <a href="#">Product Detail</a>
-                                <ul type="none">
-                                    <li><a href="#">Product Variable</a></li>
-                                    <li><a href="#">Product Default</a></li>
-                                    <li><a href="#">Product Grouped</a></li>
-                                    <li><a href="#">Product External</a></li>
-                                    <li><a href="#">Product Downloadable</a></li>
-                                    <li><a href="#">Produt With Video</a></li>
-                                    <li><a href="#">Without Recently Viewed</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Shop Pages</a>
-                                <ul type="none">
-                                    <li><a href="#">Cart</a></li>
-                                    <li><a href="#">Checkout</a></li>
-                                    <li><a href="#">My account</a></li>
-                                    <li><a href="#">Wishlist</a></li>
-                                    <li><a href="#">Order Tracking</a></li>
-                                    <li><a href="#">BestSelling Products</a></li>
-                                    <li><a href="#">Terms and Conditions</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Shop Layouts</a>
-                                <ul type="none">
-                                    <li><a href="#">Two Columns</a></li>
-                                    <li><a href="#">Three Columns</a></li>
-                                    <li><a href="#">Three Columns Wide</a></li>
-                                    <li><a href="#">Four Columns</a></li>
-                                    <li><a href="#">Four Columns Wide</a></li>
-                                    <li><a href="#">FiveColumns Wide</a></li>
-                                    <li><a href="#">Six Columns Wide</a></li>
-                                </ul>
-                            </li>
-                        </ul> -->
-                    </li>
-                    <li class="nav-modal--li"><a href="#">Women</a></li>
-                    <li class="nav-modal--li"><a href="#">Men</a></li>
-                    <li class="nav-modal--li"><a href="#">Outerwear</a></li>
-                    <li class="nav-modal--li"><a href="./blog.html">Blog</a></li>
-                    <li class="nav-modal--li"><a href="./contact.html">Contact</a></li>
-                </ul>
+                        </li>
+                        <li class="nav-modal--li"><a href="#">Women</a></li>
+                        <li class="nav-modal--li"><a href="#">Men</a></li>
+                        <li class="nav-modal--li"><a href="#">Outerwear</a></li>
+                        <li class="nav-modal--li"><a href="./blog.html">Blog</a></li>
+                        <li class="nav-modal--li"><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-modal__categories">
+                    <h4>Caegories</h4>
+                    <ul type="none" class="nav-modal--ul navbar d-flex flex-column align-items-start mt-2">
+                        <li class="nav-modal--li men-li">
+                            <a href="#">Men</a>
+                            <div class="nav-modal--li-btn men-li-btn">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <ul class="nav-modal--alt-ul men--alt-ul" type="none">
+                                <li><a href="#">Jacket & coats</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Knit</a></li>
+                                <li><a href="#">Pants</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Shorts</a></li>
+                                <li><a href="#">Sweatshirts & Hoodies</a></li>
+                                <li><a href="#">Swimwear</a></li>
+                                <li><a href="#">T-shirts</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-modal--li home-li women-li">
+                            <a href="#">Women</a>
+                            <div class="nav-modal--li-btn women-li-btn">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <ul class="nav-modal--alt-ul women--alt-ul" type="none">
+                                <li><a href="#">Blazers</a></li>
+                                <li><a href="#">Blousers & shirts</a></li>
+                                <li><a href="#">Dresses</a></li>
+                                <li><a href="#">Jackets & shirts</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Knit</a></li>
+                                <li><a href="#">Pants</a></li>
+                                <li><a href="#">Skirts</a></li>
+                                <li><a href="#">Suits</a></li>
+                                <li><a href="#">T-shirts</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-modal--li home-li"><a href="#">Kids</a></li>
+                        <li class="nav-modal--li home-li"><a href="#">Baby</a></li>
+                        <li class="nav-modal--li home-li"><a href="#">Shoes</a></li>
+                        <li class="nav-modal--li home-li"><a href="#">Bags</a></li>
+                        <li class="nav-modal--li home-li"><a href="#">Accessories</a></li>
+                        <li class="nav-modal--li home-li"><a href="#">Watches</a></li>
+                        <li class="nav-modal--li home-li"><a href="#">Cargo Trousers</a></li>
+                        <li class="nav-modal--li home-li"><a href="#">Outerwear</a></li>
+                        <li class="nav-modal--li home-li"><a href="#">Wallets</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -1014,8 +1051,9 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="assets/slick/slick.min.js"></script>
-    <script src="assets/js/main.js"></script>
     <script src="assets/js/slider.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/basket.js"></script>
 </body>
 
 </html>

@@ -87,7 +87,7 @@
             <div class="header-main-wrapper row d-flex justify-content-between ">
                 <div class="col-8 d-flex align-items-center">
                     <nav class="h-100">
-                        <div class="nav-menu">
+                        <div style="cursor: pointer;" class="nav-menu">
                             <i class="fa-solid fa-bars"></i>
                         </div>
                         <div class="nav-logo">
@@ -179,7 +179,27 @@
                     <div class="header-cart d-flex align-items-center">
                         <span class="header-cart-price">$0.00</span>
                         <img src="assets/images/shopping-bag.png" alt="shopping-bag.png">
-                        <span class="header-cart-count">0</span>
+                        <span class="header-cart-count"></span>
+                        <div class="cart-hover">
+                            <div class="cart-wrapper">          
+                            </div>
+                            <div class="cart-footer row">
+                                <p class="col-6 subtotal">Subtotal:</p>
+                                <span class="col-6 total-price-basket">$141.23</span>
+                                <div style="font-size: 13px; color: black;" class="col-12 mt-1">You have <span style="font-size: 13px;" class="product-count">0</span> items in your cart</div>
+                                <div class="free-shipping col-12 mb-4">
+                                    <div class="free-shipping-notice">
+                                        Add <span>$205.03</span> to cart and get
+                                        free shipping!
+                                    </div>
+                                    <div class="progress-bar">
+                                        <span class="progress"></span>
+                                    </div>
+                                </div>
+                                <a style="text-decoration: none;" href="./cart.html" class="col-12 view-cart-btn cart-btn mb-2"><span>View Cart</span></a>
+                                <button class="col-12 checkout-cart-btn cart-btn mb-3"><span>Checkout</span></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -210,74 +230,6 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td style="width: 490px;">
-                                        <div class="cart-item d-flex align-items-center gap-5 center-item">
-                                            <div class="cart-thumbnail">
-                                                <div class="cart-deleteBtn"><i class="fa-solid fa-xmark"></i></div>
-                                                <a href="#">
-                                                    <img src="assets/images/product-image7.jpg" alt="">
-                                                </a>
-                                            </div>
-                                            <div class="cart-title">Sleeveless Ribbed Short Dress Black - L</div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="cart-price center-item">
-                                            <span>$14.99</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="product-count center-item">
-                                            <div class="shopping-cart__item__count">
-                                                <button class="shopping-cart__item__qty-minus"><i
-                                                        class="fa-solid fa-minus"></i></button>
-                                                <input class="shopping-cart__item--count" type="text" pattern="\d{10}"
-                                                    required value="1">
-                                                <button class="shopping-cart__item__qty-plus"><i
-                                                        class="fa-regular fa-plus"></i></button>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="sub-total center-item">
-                                            <span>$14.99</span>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style="width: 490px;">
-                                        <div class="cart-item d-flex align-items-center gap-5 center-item">
-                                            <div class="cart-thumbnail">
-                                                <div class="cart-deleteBtn"><i class="fa-solid fa-xmark"></i></div>
-                                                <a href="#"><img src="assets/images/product-image9.jpeg" alt=""></a>
-                                            </div>
-                                            <div class="cart-title">Ribbed Short Dress Black - M</div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="cart-price center-item">
-                                            <span>$19.99</span>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="product-count center-item">
-                                            <div class="shopping-cart__item__count">
-                                                <button class="shopping-cart__item__qty-minus"><i
-                                                        class="fa-solid fa-minus"></i></button>
-                                                <input class="shopping-cart__item--count" type="text" pattern="\d{10}"
-                                                    required value="1">
-                                                <button class="shopping-cart__item__qty-plus"><i
-                                                        class="fa-regular fa-plus"></i></button>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="sub-total center-item">
-                                            <span>$12.99</span>
-                                        </div>
-                                    </td>
-                                </tr>
                             </tbody>
                         </table>
                         <div class="cart-left-footer d-flex justify-content-between mt-4">
@@ -295,7 +247,7 @@
                             <tbody>
                                 <tr class="cart-subtotal">
                                     <th>Subtotal</th>
-                                    <td data-title="Subtotal"><span class="woocommerce-Price-amount amount"><bdi><span
+                                    <td data-title="Subtotal"><span class="woocommerce-Price-amount amount"><bdi class="sub-total-bdi"><span
                                                     class="woocommerce-Price-currencySymbol">$</span>44.97</bdi></span>
                                     </td>
                                 </tr>
@@ -326,7 +278,7 @@
                                     <th>Total</th>
                                     <td data-title="Total">
                                         <div class="total-price">
-                                            <span>$44.97</span>
+                                            <span class="total-price-span">$44.97</span>
                                         </div>
                                     </td>
                                 </tr>
@@ -430,6 +382,111 @@
             </div>
         </div>
     </footer>
+
+    <div id="nav-modal" class="nav-modal">
+        <div class="nav-modal__content">
+            <span class="close">&times;</span>
+            <div class="row">
+                <div class="nav-modal__logo">
+                    <a href="./index.html"><img src="assets/images/logo.png" alt="logo.png"></a>
+                </div>
+                <div class="nav-modal__menu">
+                    <h4>Main Menu</h4>
+                    <ul type="none" class="nav-modal--ul navbar d-flex flex-column align-items-start mt-2">
+                        <li class="nav-modal--li home-li"><a href="./index.html">
+                                Home </a>
+                                <div class="nav-modal--li-btn home-li-btn">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                            <ul class="nav-modal--alt-ul home--alt-ul" type="none">
+                                <li><a href="#">Home 1</a></li>
+                                <li><a href="#">Home 2</a></li>
+                                <li><a href="#">Home 3</a></li>
+                                <li><a href="#">Home 4</a></li>
+                                <li><a href="#">Home 5</a></li>
+                                <li><a href="#">Home 6</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-modal--li shop-ul">
+                            <a href="./shop.html">
+                                Shop </a>
+                                <div class="nav-modal--li-btn shop-li-btn">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                                <ul class="nav-modal--alt-ul shop--alt-ul" type="none">
+                                    <li><a href="#">Shop Default</a></li>
+                                    <li><a href="#">Shop Right Sidebar</a></li>
+                                    <li><a href="#">Shop Wide</a></li>
+                                    <li><a href="#">Filters Area</a></li>
+                                    <li><a href="#">List Left Sidebar</a></li>
+                                    <li><a href="#">Load More Button</a></li>
+                                    <li><a href="#">Infinite Scrolling</a></li>
+                                </ul>
+                        </li>
+                        <li class="nav-modal--li"><a href="#">Women</a></li>
+                        <li class="nav-modal--li"><a href="#">Men</a></li>
+                        <li class="nav-modal--li"><a href="#">Outerwear</a></li>
+                        <li class="nav-modal--li"><a href="./blog.html">Blog</a></li>
+                        <li class="nav-modal--li"><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-modal__categories">
+                    <h4>Caegories</h4>
+                    <ul type="none" class="nav-modal--ul navbar d-flex flex-column align-items-start mt-2">
+                        <li class="nav-modal--li men-li">
+                            <a href="#">Men</a>
+                            <div class="nav-modal--li-btn men-li-btn">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <ul class="nav-modal--alt-ul men--alt-ul" type="none">
+                                <li><a href="#">Jacket & coats</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Knit</a></li>
+                                <li><a href="#">Pants</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Shorts</a></li>
+                                <li><a href="#">Sweatshirts & Hoodies</a></li>
+                                <li><a href="#">Swimwear</a></li>
+                                <li><a href="#">T-shirts</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-modal--li home-li women-li">
+                            <a href="#">Women</a>
+                            <div class="nav-modal--li-btn women-li-btn">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <ul class="nav-modal--alt-ul women--alt-ul" type="none">
+                                <li><a href="#">Blazers</a></li>
+                                <li><a href="#">Blousers & shirts</a></li>
+                                <li><a href="#">Dresses</a></li>
+                                <li><a href="#">Jackets & shirts</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Knit</a></li>
+                                <li><a href="#">Pants</a></li>
+                                <li><a href="#">Skirts</a></li>
+                                <li><a href="#">Suits</a></li>
+                                <li><a href="#">T-shirts</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-modal--li home-li"><a href="#">Kids</a></li>
+                        <li class="nav-modal--li home-li"><a href="#">Baby</a></li>
+                        <li class="nav-modal--li home-li"><a href="#">Shoes</a></li>
+                        <li class="nav-modal--li home-li"><a href="#">Bags</a></li>
+                        <li class="nav-modal--li home-li"><a href="#">Accessories</a></li>
+                        <li class="nav-modal--li home-li"><a href="#">Watches</a></li>
+                        <li class="nav-modal--li home-li"><a href="#">Cargo Trousers</a></li>
+                        <li class="nav-modal--li home-li"><a href="#">Outerwear</a></li>
+                        <li class="nav-modal--li home-li"><a href="#">Wallets</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/basket.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/cart.js"></script>
 </body>
 
 </html>

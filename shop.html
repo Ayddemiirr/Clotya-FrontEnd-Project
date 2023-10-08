@@ -87,7 +87,7 @@
             <div class="header-main-wrapper row d-flex justify-content-between ">
                 <div class="col-8 d-flex align-items-center">
                     <nav class="h-100">
-                        <div class="nav-menu">
+                        <div style="cursor: pointer;" class="nav-menu">
                             <i class="fa-solid fa-bars"></i>
                         </div>
                         <div class="nav-logo">
@@ -169,7 +169,7 @@
                     </nav>
                 </div>
                 <div class="header-main-right col-2 d-flex justify-content-end align-items-center">
-                    <div class="header-account"><i class="fa-regular fa-user"></i></div>
+                    <a href="./my-account.html" class="header-account"><i class="fa-regular fa-user"></i></a>
                     <div class="search-toggle"><img src="assets/images/search-interface-symbol.png"
                             alt="search-interface-symbol.png"></i></div>
                     <a href="./wishlist.html" class="header-wishlist">
@@ -179,7 +179,27 @@
                     <div class="header-cart d-flex align-items-center">
                         <span class="header-cart-price">$0.00</span>
                         <img src="assets/images/shopping-bag.png" alt="shopping-bag.png">
-                        <span class="header-cart-count">0</span>
+                        <span class="header-cart-count"></span>
+                        <div class="cart-hover">
+                            <div class="cart-wrapper">          
+                            </div>
+                            <div class="cart-footer row">
+                                <p class="col-6 subtotal">Subtotal:</p>
+                                <span class="col-6 total-price-basket">$141.23</span>
+                                <div style="font-size: 13px; color: black;" class="col-12 mt-1">You have <span style="font-size: 13px;" class="product-count">3</span> items in your cart</div>
+                                <div class="free-shipping col-12 mb-4">
+                                    <div class="free-shipping-notice">
+                                        Add <span>$205.03</span> to cart and get
+                                        free shipping!
+                                    </div>
+                                    <div class="progress-bar">
+                                        <span class="progress"></span>
+                                    </div>
+                                </div>
+                                <a style="text-decoration: none;" href="./cart.html" class="col-12 view-cart-btn cart-btn mb-2"><span>View Cart</span></a>
+                                <button class="col-12 checkout-cart-btn cart-btn mb-3"><span>Checkout</span></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -545,7 +565,7 @@
                             </div>
                         </div>
                         <div class="shop__content__filter-products">
-                            <div class="product-card">
+                            <div class="product-card" data-id="1">
                                 <div class="product-card-thumbnail">
                                     <div class="main-image product-image">
                                         <a href="#"><img src="assets/images/product-image1.jpg" alt="product-image1.jpg"></a>
@@ -569,7 +589,7 @@
                                     </div>
                                 </div>
                                 <div class="product-card-text">
-                                    <div class="product-card-review">
+                                    <div class="product-card-review" data-raiting="2">
                                         <i class="fa-solid fa-star" style="color: #f1e909;"></i>
                                         <span>2 review</span>
                                     </div>
@@ -582,7 +602,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product-card">
+                            <div class="product-card" data-id="2">
                                 <div class="product-card-thumbnail">
                                     <div class="main-image product-image"><a href="#"><img
                                                 src="assets/images/product-image3.jpeg" alt="product-image3.jpg"></a></div>
@@ -604,7 +624,7 @@
                                     </div>
                                 </div>
                                 <div class="product-card-text">
-                                    <div class="product-card-review">
+                                    <div class="product-card-review" data-raiting="1">
                                         <i class="fa-solid fa-star" style="color: #f1e909;"></i>
                                         <span>1 review</span>
                                     </div>
@@ -617,7 +637,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product-card">
+                            <div class="product-card" data-id="3">
                                 <div class="product-card-thumbnail">
                                     <div class="main-image product-image"><a href="#"><img
                                                 src="assets/images/product-image5.jpeg" alt="product-image5.jpg"></a></div>
@@ -639,7 +659,7 @@
                                     </div>
                                 </div>
                                 <div class="product-card-text">
-                                    <div class="product-card-review">
+                                    <div class="product-card-review" data-raiting="4">
                                         <i class="fa-solid fa-star" style="color: #f1e909;"></i>
                                         <span>4 review</span>
                                     </div>
@@ -652,7 +672,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product-card">
+                            <div class="product-card" data-id="4">
                                 <div class="product-card-thumbnail">
                                     <div class="main-image product-image"><a href="#"><img
                                                 src="assets/images/product-image7.jpg" alt="product-image7.jpg"></a></div>
@@ -673,7 +693,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product-card-text">
+                                <div class="product-card-text" data-raiting="4">
                                     <div class="product-card-review">
                                         <i class="fa-solid fa-star" style="color: #f1e909;"></i>
                                         <span>2 review</span>
@@ -687,7 +707,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product-card">
+                            <div class="product-card" data-id="5">
                                 <div class="product-card-thumbnail">
                                     <div class="main-image product-image"><a href="#"><img
                                                 src="assets/images/product-image9.jpeg" alt="product-image9.jpeg"></a></div>
@@ -709,7 +729,7 @@
                                     </div>
                                 </div>
                                 <div class="product-card-text">
-                                    <div class="product-card-review">
+                                    <div class="product-card-review" data-raiting="2">
                                         <i class="fa-solid fa-star" style="color: #f1e909;"></i>
                                         <span>2 review</span>
                                     </div>
@@ -722,7 +742,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product-card">
+                            <div class="product-card" data-id="6">
                                 <div class="product-card-thumbnail">
                                     <div class="main-image product-image"><a href="#"><img
                                                 src="assets/images/product-image11.jpg" alt="product-image11.jpg"></a></div>
@@ -744,7 +764,7 @@
                                     </div>
                                 </div>
                                 <div class="product-card-text">
-                                    <div class="product-card-review">
+                                    <div class="product-card-review" data-raiting="2">
                                         <i class="fa-solid fa-star" style="color: #f1e909;"></i>
                                         <span>2 review</span>
                                     </div>
@@ -757,7 +777,44 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product-card">
+                            <div class="product-card" data-id="7">
+                                <div class="product-card-thumbnail">
+                                    <div class="main-image product-image">
+                                        <a href="#"><img src="assets/images/product-image1.jpg" alt="product-image1.jpg"></a>
+                                    </div>
+                                    <div class="hover-image product-image">
+                                        <a href="#"><img src="assets/images/product-image2.jpg" alt="product-image2.jpg"></a>
+                                    </div>
+                                    <div class="product-link">
+                                        <div class="add-to-card product-card-page-link">
+                                            <i class="fa-solid fa-basket-shopping"></i>
+                                        </div>
+                                        <div class="wishlist product-card-page-link">
+                                            <i class="fa-regular fa-heart"></i>
+                                        </div>
+                                        <div class="compare product-card-page-link">
+                                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                                        </div>
+                                        <div class="quickview product-card-page-link" onclick="openModal()">
+                                            <i class="fa-regular fa-eye"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-card-text">
+                                    <div class="product-card-review" data-raiting="7">
+                                        <i class="fa-solid fa-star" style="color: #f1e909;"></i>
+                                        <span>2 review</span>
+                                    </div>
+                                    <div class="product-card-title">
+                                        <a href="#">Short Nylon-Effect Puffer Jacket</a>
+                                    </div>
+                                    <div class="product-card-price">
+                                        <div class="old-price">$22.70</div>
+                                        <div class="new-price">$18.70</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-card" data-id="8">
                                 <div class="product-card-thumbnail">
                                     <div class="main-image product-image"><a href="#"><img
                                                 src="assets/images/product-image3.jpeg" alt="product-image3.jpg"></a></div>
@@ -779,7 +836,7 @@
                                     </div>
                                 </div>
                                 <div class="product-card-text">
-                                    <div class="product-card-review">
+                                    <div class="product-card-review" data-raiting="8">
                                         <i class="fa-solid fa-star" style="color: #f1e909;"></i>
                                         <span>1 review</span>
                                     </div>
@@ -792,7 +849,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product-card">
+                            <div class="product-card" data-id="9">
                                 <div class="product-card-thumbnail">
                                     <div class="main-image product-image"><a href="#"><img
                                                 src="assets/images/product-image5.jpeg" alt="product-image5.jpg"></a></div>
@@ -814,7 +871,7 @@
                                     </div>
                                 </div>
                                 <div class="product-card-text">
-                                    <div class="product-card-review">
+                                    <div class="product-card-review" data-raiting="9">
                                         <i class="fa-solid fa-star" style="color: #f1e909;"></i>
                                         <span>4 review</span>
                                     </div>
@@ -827,7 +884,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product-card">
+                            <div class="product-card" data-id="10">
                                 <div class="product-card-thumbnail">
                                     <div class="main-image product-image"><a href="#"><img
                                                 src="assets/images/product-image7.jpg" alt="product-image7.jpg"></a></div>
@@ -848,7 +905,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="product-card-text">
+                                <div class="product-card-text" data-raiting="10">
                                     <div class="product-card-review">
                                         <i class="fa-solid fa-star" style="color: #f1e909;"></i>
                                         <span>2 review</span>
@@ -862,77 +919,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product-card">
-                                <div class="product-card-thumbnail">
-                                    <div class="main-image product-image"><a href="#"><img
-                                                src="assets/images/product-image5.jpeg" alt="product-image5.jpg"></a></div>
-                                    <div class="hover-image product-image"><a href="#"><img
-                                                src="assets/images/product-image6.jpeg" alt="product-image6.jpg"></a></div>
-                                    <div class="product-link">
-                                        <div class="add-to-card product-card-page-link">
-                                            <i class="fa-solid fa-basket-shopping"></i>
-                                        </div>
-                                        <div class="wishlist product-card-page-link">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                        <div class="compare product-card-page-link">
-                                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                        </div>
-                                        <div class="quickview product-card-page-link" onclick="openModal()">
-                                            <i class="fa-regular fa-eye"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-card-text">
-                                    <div class="product-card-review">
-                                        <i class="fa-solid fa-star" style="color: #f1e909;"></i>
-                                        <span>4 review</span>
-                                    </div>
-                                    <div class="product-card-title">
-                                        <a href="#">Lightweight Zipped Bomber Jacket</a>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <div class="old-price">$22.70</div>
-                                        <div class="new-price">$18.70</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-card">
-                                <div class="product-card-thumbnail">
-                                    <div class="main-image product-image"><a href="#"><img
-                                                src="assets/images/product-image7.jpg" alt="product-image7.jpg"></a></div>
-                                    <div class="hover-image product-image"><a href="#"><img
-                                                src="assets/images/product-image8.jpg" alt="product-image8.jpg"></a></div>
-                                    <div class="product-link">
-                                        <div class="add-to-card product-card-page-link">
-                                            <i class="fa-solid fa-basket-shopping"></i>
-                                        </div>
-                                        <div class="wishlist product-card-page-link">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                        <div class="compare product-card-page-link">
-                                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                        </div>
-                                        <div class="quickview product-card-page-link" onclick="openModal()">
-                                            <i class="fa-regular fa-eye"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-card-text">
-                                    <div class="product-card-review">
-                                        <i class="fa-solid fa-star" style="color: #f1e909;"></i>
-                                        <span>2 review</span>
-                                    </div>
-                                    <div class="product-card-title">
-                                        <a href="#">Long Sleeve Sweatshirt Dress</a>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <div class="old-price">$22.70</div>
-                                        <div class="new-price">$18.70</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-card">
+                            <div class="product-card" data-id="11">
                                 <div class="product-card-thumbnail">
                                     <div class="main-image product-image"><a href="#"><img
                                                 src="assets/images/product-image9.jpeg" alt="product-image9.jpeg"></a></div>
@@ -954,7 +941,7 @@
                                     </div>
                                 </div>
                                 <div class="product-card-text">
-                                    <div class="product-card-review">
+                                    <div class="product-card-review" data-raiting="11">
                                         <i class="fa-solid fa-star" style="color: #f1e909;"></i>
                                         <span>2 review</span>
                                     </div>
@@ -967,7 +954,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="product-card">
+                            <div class="product-card" data-id="12">
                                 <div class="product-card-thumbnail">
                                     <div class="main-image product-image"><a href="#"><img
                                                 src="assets/images/product-image11.jpg" alt="product-image11.jpg"></a></div>
@@ -989,112 +976,7 @@
                                     </div>
                                 </div>
                                 <div class="product-card-text">
-                                    <div class="product-card-review">
-                                        <i class="fa-solid fa-star" style="color: #f1e909;"></i>
-                                        <span>2 review</span>
-                                    </div>
-                                    <div class="product-card-title">
-                                        <a href="#">Long Sleeve Sweatshirt Dress</a>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <div class="old-price">$22.70</div>
-                                        <div class="new-price">$18.70</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-card">
-                                <div class="product-card-thumbnail">
-                                    <div class="main-image product-image"><a href="#"><img
-                                                src="assets/images/product-image3.jpeg" alt="product-image3.jpg"></a></div>
-                                    <div class="hover-image product-image"><a href="#"><img
-                                                src="assets/images/product-image4.jpeg" alt="product-image4.jpg"></a></div>
-                                    <div class="product-link">
-                                        <div class="add-to-card product-card-page-link">
-                                            <i class="fa-solid fa-basket-shopping"></i>
-                                        </div>
-                                        <div class="wishlist product-card-page-link">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                        <div class="compare product-card-page-link">
-                                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                        </div>
-                                        <div class="quickview product-card-page-link" onclick="openModal()">
-                                            <i class="fa-regular fa-eye"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-card-text">
-                                    <div class="product-card-review">
-                                        <i class="fa-solid fa-star" style="color: #f1e909;"></i>
-                                        <span>1 review</span>
-                                    </div>
-                                    <div class="product-card-title">
-                                        <a href="#">Pouch Pocket Hoodie Orange</a>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <div class="old-price">$24.70</div>
-                                        <div class="new-price">$20.70</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-card">
-                                <div class="product-card-thumbnail">
-                                    <div class="main-image product-image"><a href="#"><img
-                                                src="assets/images/product-image5.jpeg" alt="product-image5.jpg"></a></div>
-                                    <div class="hover-image product-image"><a href="#"><img
-                                                src="assets/images/product-image6.jpeg" alt="product-image6.jpg"></a></div>
-                                    <div class="product-link">
-                                        <div class="add-to-card product-card-page-link">
-                                            <i class="fa-solid fa-basket-shopping"></i>
-                                        </div>
-                                        <div class="wishlist product-card-page-link">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                        <div class="compare product-card-page-link">
-                                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                        </div>
-                                        <div class="quickview product-card-page-link" onclick="openModal()">
-                                            <i class="fa-regular fa-eye"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-card-text">
-                                    <div class="product-card-review">
-                                        <i class="fa-solid fa-star" style="color: #f1e909;"></i>
-                                        <span>4 review</span>
-                                    </div>
-                                    <div class="product-card-title">
-                                        <a href="#">Lightweight Zipped Bomber Jacket</a>
-                                    </div>
-                                    <div class="product-card-price">
-                                        <div class="old-price">$22.70</div>
-                                        <div class="new-price">$18.70</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-card">
-                                <div class="product-card-thumbnail">
-                                    <div class="main-image product-image"><a href="#"><img
-                                                src="assets/images/product-image7.jpg" alt="product-image7.jpg"></a></div>
-                                    <div class="hover-image product-image"><a href="#"><img
-                                                src="assets/images/product-image8.jpg" alt="product-image8.jpg"></a></div>
-                                    <div class="product-link">
-                                        <div class="add-to-card product-card-page-link">
-                                            <i class="fa-solid fa-basket-shopping"></i>
-                                        </div>
-                                        <div class="wishlist product-card-page-link">
-                                            <i class="fa-regular fa-heart"></i>
-                                        </div>
-                                        <div class="compare product-card-page-link">
-                                            <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
-                                        </div>
-                                        <div class="quickview product-card-page-link" onclick="openModal()">
-                                            <i class="fa-regular fa-eye"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="product-card-text">
-                                    <div class="product-card-review">
+                                    <div class="product-card-review" data-raiting="12">
                                         <i class="fa-solid fa-star" style="color: #f1e909;"></i>
                                         <span>2 review</span>
                                     </div>
@@ -1206,6 +1088,108 @@
         </div>
     </footer>
 
+    <div id="nav-modal" class="nav-modal">
+        <div class="nav-modal__content">
+            <span class="close">&times;</span>
+            <div class="row">
+                <div class="nav-modal__logo">
+                    <a href="./index.html"><img src="assets/images/logo.png" alt="logo.png"></a>
+                </div>
+                <div class="nav-modal__menu">
+                    <h4>Main Menu</h4>
+                    <ul type="none" class="nav-modal--ul navbar d-flex flex-column align-items-start mt-2">
+                        <li class="nav-modal--li home-li"><a href="./index.html">
+                                Home </a>
+                                <div class="nav-modal--li-btn home-li-btn">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                            <ul class="nav-modal--alt-ul home--alt-ul" type="none">
+                                <li><a href="#">Home 1</a></li>
+                                <li><a href="#">Home 2</a></li>
+                                <li><a href="#">Home 3</a></li>
+                                <li><a href="#">Home 4</a></li>
+                                <li><a href="#">Home 5</a></li>
+                                <li><a href="#">Home 6</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-modal--li shop-ul">
+                            <a href="./shop.html">
+                                Shop </a>
+                                <div class="nav-modal--li-btn shop-li-btn">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </div>
+                                <ul class="nav-modal--alt-ul shop--alt-ul" type="none">
+                                    <li><a href="#">Shop Default</a></li>
+                                    <li><a href="#">Shop Right Sidebar</a></li>
+                                    <li><a href="#">Shop Wide</a></li>
+                                    <li><a href="#">Filters Area</a></li>
+                                    <li><a href="#">List Left Sidebar</a></li>
+                                    <li><a href="#">Load More Button</a></li>
+                                    <li><a href="#">Infinite Scrolling</a></li>
+                                </ul>
+                        </li>
+                        <li class="nav-modal--li"><a href="#">Women</a></li>
+                        <li class="nav-modal--li"><a href="#">Men</a></li>
+                        <li class="nav-modal--li"><a href="#">Outerwear</a></li>
+                        <li class="nav-modal--li"><a href="./blog.html">Blog</a></li>
+                        <li class="nav-modal--li"><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-modal__categories">
+                    <h4>Caegories</h4>
+                    <ul type="none" class="nav-modal--ul navbar d-flex flex-column align-items-start mt-2">
+                        <li class="nav-modal--li men-li">
+                            <a href="#">Men</a>
+                            <div class="nav-modal--li-btn men-li-btn">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <ul class="nav-modal--alt-ul men--alt-ul" type="none">
+                                <li><a href="#">Jacket & coats</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Knit</a></li>
+                                <li><a href="#">Pants</a></li>
+                                <li><a href="#">Shirts</a></li>
+                                <li><a href="#">Shorts</a></li>
+                                <li><a href="#">Sweatshirts & Hoodies</a></li>
+                                <li><a href="#">Swimwear</a></li>
+                                <li><a href="#">T-shirts</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-modal--li home-li women-li">
+                            <a href="#">Women</a>
+                            <div class="nav-modal--li-btn women-li-btn">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                            <ul class="nav-modal--alt-ul women--alt-ul" type="none">
+                                <li><a href="#">Blazers</a></li>
+                                <li><a href="#">Blousers & shirts</a></li>
+                                <li><a href="#">Dresses</a></li>
+                                <li><a href="#">Jackets & shirts</a></li>
+                                <li><a href="#">Jeans</a></li>
+                                <li><a href="#">Knit</a></li>
+                                <li><a href="#">Pants</a></li>
+                                <li><a href="#">Skirts</a></li>
+                                <li><a href="#">Suits</a></li>
+                                <li><a href="#">T-shirts</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-modal--li home-li"><a href="#">Kids</a></li>
+                        <li class="nav-modal--li home-li"><a href="#">Baby</a></li>
+                        <li class="nav-modal--li home-li"><a href="#">Shoes</a></li>
+                        <li class="nav-modal--li home-li"><a href="#">Bags</a></li>
+                        <li class="nav-modal--li home-li"><a href="#">Accessories</a></li>
+                        <li class="nav-modal--li home-li"><a href="#">Watches</a></li>
+                        <li class="nav-modal--li home-li"><a href="#">Cargo Trousers</a></li>
+                        <li class="nav-modal--li home-li"><a href="#">Outerwear</a></li>
+                        <li class="nav-modal--li home-li"><a href="#">Wallets</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/basket.js"></script>
     <script src="assets/js/shop.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
